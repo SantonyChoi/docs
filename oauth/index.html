@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Authentication - Bitski Docs</title>
+  <link rel="stylesheet" href="../css/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Authentication";
+    var mkdocs_page_input_path = "oauth.md";
+    var mkdocs_page_url = "/oauth/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script type="text/javascript" src="../js/highlight.pack.js" defer></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="logo">
+        <h3><a href="..">Bitski <span class="highlighted">Docs</span></a></h3>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <h4>Learn</h4>
+          <ul class="current">
+            
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="..">Home</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../overview/">Overview</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../getting-started/">Getting Started</a>
+              </li>
+            
+              <li class="toctree-l1 current">
+                
+    <a class="current" href="./">Authentication</a>
+        <!--
+        <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#how-it-works">How it works</a></li>
+
+    <li class="toctree-l2"><a href="#available-scopes">Available Scopes</a></li>
+
+        </ul> -->
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../client-settings/">Client Settings</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../examples/">Examples</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../tutorial/">Tutorial</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../faq/">FAQ</a>
+              </li>
+            
+          </ul>
+          <h4>SDKs</h4>
+          <ul class="platforms">
+            <li class="toctree-l1"><a href="https://github.com/BitskiCo/bitski-js-sdk">JavaScript</a></li>
+            <li class="toctree-l1"><a href="https://github.com/BitskiCo/BitskiSDK">iOS</a></li>
+          </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <div class="logo">
+          <h3><a href="..">Bitski <span class="highlighted">Docs</span></a></h3>
+        </div>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> <span class="divider">/</span></li>
+    
+      
+    
+    <li>Authentication</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1>Authentication</h1>
+                <p>Bitski uses OAuth2 to connect users and their wallets with your app. OAuth is a great standard for securely sharing data between services.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>As a developer, you choose what permissions and data you want access to through <em>scopes</em>. By default our SDKs only request the profile scope.</p>
+<p>Then, when a user visits your app for the first time and chooses to authenticate with their Bitski account, they will see the requested scopes. The user can then make a decision to approve all, some, or none of the scopes.</p>
+<p>Once the user has made a decision to grant your app various permissions, they will be redirected back to your app at the <em>callback url</em> that you specified. Note that the callback url specified from your client must match your url settings in the developer portal.</p>
+<p>Through being redirected, you'll receive an authentication token that can be used to interact with Bitski's apis on behalf of the user.</p>
+<p>Our various SDKs automatically handle passing that authentication token to Web3, so most likely you won't need to do anything with the authentication token yourself.</p>
+<h2 id="available-scopes">Available Scopes</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>email</code></td>
+<td>Gives you access to the user's email address</td>
+</tr>
+<tr>
+<td><code>offline</code></td>
+<td>Allows your token to be renewed with a refresh token. This is required to have a session that lasts longer than 5 minutes.</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../client-settings/" class="btn btn-neutral float-right" title="Client Settings">Next &rarr;</a>
+      
+      
+        <a href="../getting-started/" class="btn btn-neutral" title="Getting Started">&larr; Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo" class="copyright">
+    <!-- Copyright etc -->
+    
+      <p>© 2018 Out There Labs, Inc.</p>
+    
+  </div>
+
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/require.js" defer></script>
+      <script src="../search/search.js" defer></script>
+
+</body>
+</html>

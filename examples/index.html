@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Examples - Bitski Docs</title>
+  <link rel="stylesheet" href="../css/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Examples";
+    var mkdocs_page_input_path = "examples.md";
+    var mkdocs_page_url = "/examples/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script type="text/javascript" src="../js/highlight.pack.js" defer></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="logo">
+        <h3><a href="..">Bitski <span class="highlighted">Docs</span></a></h3>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <h4>Learn</h4>
+          <ul class="current">
+            
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="..">Home</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../overview/">Overview</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../getting-started/">Getting Started</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../oauth/">Authentication</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../client-settings/">Client Settings</a>
+              </li>
+            
+              <li class="toctree-l1 current">
+                
+    <a class="current" href="./">Examples</a>
+        <!--
+        <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#web-based-dapp">Web based Dapp</a></li>
+
+    <li class="toctree-l2"><a href="#ios-dapp">iOS Dapp</a></li>
+
+        </ul> -->
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../tutorial/">Tutorial</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../faq/">FAQ</a>
+              </li>
+            
+          </ul>
+          <h4>SDKs</h4>
+          <ul class="platforms">
+            <li class="toctree-l1"><a href="https://github.com/BitskiCo/bitski-js-sdk">JavaScript</a></li>
+            <li class="toctree-l1"><a href="https://github.com/BitskiCo/BitskiSDK">iOS</a></li>
+          </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <div class="logo">
+          <h3><a href="..">Bitski <span class="highlighted">Docs</span></a></h3>
+        </div>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> <span class="divider">/</span></li>
+    
+      
+    
+    <li>Examples</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1>Examples</h1>
+                <p>These examples are a great way to quickly dive in and see how you can integrate Bitski into a dapp on the platforms we support. Both of these examples use the same contract and assets to demonstrate how you can use Bitski to build cross-platform dapps.</p>
+<h2 id="web-based-dapp">Web based Dapp</h2>
+<p>(Screenshot coming soon)</p>
+<p><a href="https://example-dapp-1.bitski.com" target="_blank" class="btn">Visit our demo here</a> <a href="https://github.com/BitskiCo/example-dapp-game" target="_blank" class="btn">View the code</a></p>
+<h4 id="running-the-example">Running the example</h4>
+<p>First, install the dependencies.</p>
+<pre><code class="bash">npm install
+</code></pre>
+
+<p>Next, you'll need to use Truffle to deploy the contracts on one of Bitski's supported networks (Kovan or Rinkeby).</p>
+<p>Install a local Ethereum node (Parity, or Geth), and configure your truffle.js to point at it, and run:</p>
+<pre><code class="bash">truffle migrate
+</code></pre>
+
+<p>Once the contracts are deployed, you can run to start the development server. You can learn more about deploying contracts with truffle here.</p>
+<pre><code class="bash">npm run dev
+</code></pre>
+
+<p>Then browse to http://localhost:3000</p>
+<hr />
+<h2 id="ios-dapp">iOS Dapp</h2>
+<p>(Video coming soon)</p>
+<p>Our demo dapp is not available on the App Store yet, but you can still easily run it yourself from Xcode.</p>
+<p><a href="https://github.com/BitskiCo/example-native-dapp" target="_blank" class="btn">View the code</a></p>
+<h4 id="running-the-example_1">Running the example</h4>
+<p>You'll need Xcode 9 and CocoaPods to build the example.</p>
+<p>Start by installing the dependencies.</p>
+<pre><code class="bash">pod install
+</code></pre>
+
+<p>Then, simply open the workspace in Xcode and run the project.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../tutorial/" class="btn btn-neutral float-right" title="Tutorial">Next &rarr;</a>
+      
+      
+        <a href="../client-settings/" class="btn btn-neutral" title="Client Settings">&larr; Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo" class="copyright">
+    <!-- Copyright etc -->
+    
+      <p>© 2018 Out There Labs, Inc.</p>
+    
+  </div>
+
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/require.js" defer></script>
+      <script src="../search/search.js" defer></script>
+
+</body>
+</html>

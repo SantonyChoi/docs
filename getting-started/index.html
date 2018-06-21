@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Getting Started - Bitski Docs</title>
+  <link rel="stylesheet" href="../css/fonts.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Getting Started";
+    var mkdocs_page_input_path = "getting-started.md";
+    var mkdocs_page_url = "/getting-started/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script type="text/javascript" src="../js/highlight.pack.js" defer></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="logo">
+        <h3><a href="..">Bitski <span class="highlighted">Docs</span></a></h3>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <h4>Learn</h4>
+          <ul class="current">
+            
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="..">Home</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../overview/">Overview</a>
+              </li>
+            
+              <li class="toctree-l1 current">
+                
+    <a class="current" href="./">Getting Started</a>
+        <!--
+        <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#signing-up">Signing up</a></li>
+
+    <li class="toctree-l2"><a href="#getting-a-client-id">Getting a client ID</a></li>
+
+    <li class="toctree-l2"><a href="#configuring-your-client-settings">Configuring your client settings</a></li>
+
+    <li class="toctree-l2"><a href="#integrate-with-your-app">Integrate with your app</a></li>
+
+        </ul> -->
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../oauth/">Authentication</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../client-settings/">Client Settings</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../examples/">Examples</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../tutorial/">Tutorial</a>
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../faq/">FAQ</a>
+              </li>
+            
+          </ul>
+          <h4>SDKs</h4>
+          <ul class="platforms">
+            <li class="toctree-l1"><a href="https://github.com/BitskiCo/bitski-js-sdk">JavaScript</a></li>
+            <li class="toctree-l1"><a href="https://github.com/BitskiCo/BitskiSDK">iOS</a></li>
+          </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <div class="logo">
+          <h3><a href="..">Bitski <span class="highlighted">Docs</span></a></h3>
+        </div>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> <span class="divider">/</span></li>
+    
+      
+    
+    <li>Getting Started</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1>Getting Started</h1>
+                <h2 id="signing-up">Signing up</h2>
+<p>The first step is to make sure that you have a Bitski account. If you haven't done so already, <a href="https://bitski.com/sign-up" target="_blank">sign up for an account</a>. Your Bitski account is both your personal wallet, and your developer account.</p>
+<h2 id="getting-a-client-id">Getting a client ID</h2>
+<p>All apps that use the Bitski need to have their own client id. We use this id to keep track of permissions a user has granted you.</p>
+<p>We're currently in private beta, so to get a client ID you must request access on our <a href="https://developer.bitski.com" target="_blank">developer portal</a>. We will review your request and notify you by email once you are approved.</p>
+<h2 id="configuring-your-client-settings">Configuring your client settings</h2>
+<p>Once you have a client id, you'll need to configure the settings for your app. You can do this from the <a href="https://developer.bitski.com" target="_blank">developer portal</a>.
+The most important setting here is the redirect url(s). We use this to ensure that only the domains you approve will be able to use your client id.</p>
+<p>For more information on all the settings, see <a href="../client-settings/">Client Settings</a>.</p>
+<h2 id="integrate-with-your-app">Integrate with your app</h2>
+<p>Now that you have a configured client id, you can start using our SDKs in your app. You'll want to follow the instructions for the particular SDK you're using:</p>
+<ul>
+<li><a href="https://github.com/BitskiCo/bitski-js-sdk" target="_blank">JavaScript</a></li>
+<li><a href="https://github.com/BitskiCo/BitskiSDK" target="_blank">iOS</a></li>
+</ul>
+<p>For web based apps, you'll need to be able to respond to the callback from our servers.</p>
+<p>It's also important to consider the user experience for various states your user will be in. Our SDKs can tell you whether or not the user is currently logged in, and you should update your UI based on that information.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../oauth/" class="btn btn-neutral float-right" title="Authentication">Next &rarr;</a>
+      
+      
+        <a href="../overview/" class="btn btn-neutral" title="Overview">&larr; Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo" class="copyright">
+    <!-- Copyright etc -->
+    
+      <p>© 2018 Out There Labs, Inc.</p>
+    
+  </div>
+
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/require.js" defer></script>
+      <script src="../search/search.js" defer></script>
+
+</body>
+</html>
