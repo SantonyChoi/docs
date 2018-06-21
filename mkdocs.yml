@@ -1,0 +1,16 @@
+site_name: Bitski Docs
+pages:
+  - Home: index.md
+  - Overview: overview.md
+  - Getting Started: getting-started.md
+  - Authentication: oauth.md
+  - Client Settings: client-settings.md
+  - Examples: examples.md
+  - Tutorial: tutorial.md
+  - FAQ: faq.md
+theme:
+  name: null
+  custom_dir: bitski_theme
+plugins:
+  - search
+copyright: © 2018 Out There Labs, Inc.
