@@ -11,6 +11,7 @@ We're currently in private beta, so to get a client ID you must request access o
 ## Configuring your client settings
 
 Once you have a client id, you'll need to configure the settings for your app. You can do this from the <a href="https://developer.bitski.com" target="_blank">developer portal</a>.
+
 The most important setting here is the redirect url(s). We use this to ensure that only the domains you approve will be able to use your client id.
 
 For more information on all the settings, see [Client Settings](client-settings.md).

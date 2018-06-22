@@ -1,6 +1,6 @@
 ## What is Bitski
 
-Bitski makes it much easier to build and use Ethereum apps. Users can sign up for your app without needing to install any additional software, and they can use their account from any device.
+Bitski lets you build *user-friendly* and *cross-platform* Ethereum apps. Using Bitski, you can build a decentralized app or game that feels just as easy to use as a standard app.
 
 ##### As a developer, you can:
 - Connect to the Ethereum network through our hosted nodes
