@@ -157,12 +157,12 @@
         }, 
         {
             "location": "/examples/", 
-            "text": "These examples are a great way to quickly dive in and see how you can integrate Bitski into a dapp on the platforms we support. Both of these examples use the same contract and assets to demonstrate how you can use Bitski to build cross-platform dapps.\n\n\nWeb based Dapp\n\n\n(Screenshot coming soon)\n\n\nVisit our demo here\n \nView the code\n\n\nRunning the example\n\n\nFirst, install the dependencies.\n\n\nnpm install\n\n\n\n\nNext, you'll need to use Truffle to deploy the contracts on one of Bitski's supported networks (Kovan or Rinkeby).\n\n\nInstall a local Ethereum node (Parity, or Geth), and configure your truffle.js to point at it, and run:\n\n\ntruffle migrate\n\n\n\n\nOnce the contracts are deployed, you can run to start the development server. You can learn more about deploying contracts with truffle here.\n\n\nnpm run dev\n\n\n\n\nThen browse to http://localhost:3000\n\n\n\n\niOS Dapp\n\n\n(Video coming soon)\n\n\nOur demo dapp is not available on the App Store yet, but you can still easily run it yourself from Xcode.\n\n\nView the code\n\n\nRunning the example\n\n\nYou'll need Xcode 9 and CocoaPods to build the example.\n\n\nStart by installing the dependencies.\n\n\npod install\n\n\n\n\nThen, simply open the workspace in Xcode and run the project.", 
+            "text": "These examples are a great way to quickly dive in and see how you can integrate Bitski into a dapp on the platforms we support. Both of these examples use the same contract and assets to demonstrate how you can use Bitski to build cross-platform dapps.\n\n\nWeb based Dapp\n\n\n\n\nVisit our demo here\n \nView the code\n\n\nRunning the example\n\n\nFirst, install the dependencies.\n\n\nnpm install\n\n\n\n\nNext, you'll need to use Truffle to deploy the contracts on one of Bitski's supported networks (Kovan or Rinkeby).\n\n\nInstall a local Ethereum node (Parity, or Geth), and configure your truffle.js to point at it, and run:\n\n\ntruffle migrate\n\n\n\n\nOnce the contracts are deployed, you can run to start the development server. You can learn more about deploying contracts with truffle here.\n\n\nnpm run dev\n\n\n\n\nThen browse to http://localhost:3000\n\n\n\n\niOS Dapp\n\n\n\n  \n\n  \n\n\n\n\n\nOur demo dapp is not available on the App Store yet, but you can still easily run it yourself from Xcode.\n\n\nView the code\n\n\nRunning the example\n\n\nYou'll need Xcode 9 and CocoaPods to build the example.\n\n\nStart by installing the dependencies.\n\n\npod install\n\n\n\n\nThen, simply open the workspace in Xcode and run the project.", 
             "title": "Examples"
         }, 
         {
             "location": "/examples/#web-based-dapp", 
-            "text": "(Screenshot coming soon)  Visit our demo here   View the code", 
+            "text": "Visit our demo here   View the code", 
             "title": "Web based Dapp"
         }, 
         {
@@ -172,7 +172,7 @@
         }, 
         {
             "location": "/examples/#ios-dapp", 
-            "text": "(Video coming soon)  Our demo dapp is not available on the App Store yet, but you can still easily run it yourself from Xcode.  View the code", 
+            "text": "Our demo dapp is not available on the App Store yet, but you can still easily run it yourself from Xcode.  View the code", 
             "title": "iOS Dapp"
         }, 
         {
