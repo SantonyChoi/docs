@@ -6,7 +6,7 @@ This is metadata about your app that gives users more context. We will feature t
 
 ## Approved Scopes
 
-These are the scopes that clients using your *client id* can request. Requesting a scope that isn't approved for your app here will result in an error.
+These are the scopes that clients using your *client id* can request. By default `openid` is the only scope that is approved. Requesting a scope that isn't approved for your app here will result in an error.
 
 ## Callback URLs
 

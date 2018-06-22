@@ -12,6 +12,7 @@ Bitski lets you build *user-friendly* and *cross-platform* Ethereum apps. Using 
 ##### As a user, you can:
 - Use Ethereum apps without installing any software
 - Store ethereum assets in our secure wallet
+- Access wallet from any device
 - Manage access to any apps you connect
 - Recover your account at any time
 

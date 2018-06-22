@@ -1,5 +1,8 @@
 Here are some answers to the questions we get asked most often.
 
+### What networks do you support?
+
+Bitski currently supports only the Kovan and Rinkeby test networks. However, we will have support for the main Ethereum network soon.
 
 ### What's your policy on information/user ownership?
 

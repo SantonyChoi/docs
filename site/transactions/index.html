@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Tutorial - Bitski Docs</title>
+  <title>Sending Transactions - Bitski Docs</title>
   <link rel="stylesheet" href="../css/fonts.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
@@ -16,9 +16,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Tutorial";
-    var mkdocs_page_input_path = "tutorial.md";
-    var mkdocs_page_url = "/tutorial/";
+    var mkdocs_page_name = "Sending Transactions";
+    var mkdocs_page_input_path = "transactions.md";
+    var mkdocs_page_url = "/transactions/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -67,9 +67,19 @@
     <a class="" href="../client-settings/">Client Settings</a>
               </li>
             
-              <li class="toctree-l1">
+              <li class="toctree-l1 current">
                 
-    <a class="" href="../transactions/">Sending Transactions</a>
+    <a class="current" href="./">Sending Transactions</a>
+        <!--
+        <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#how-it-works">How it works</a></li>
+
+    <li class="toctree-l2"><a href="#optional-fields">Optional fields</a></li>
+
+    <li class="toctree-l2"><a href="#gas">Gas</a></li>
+
+        </ul> -->
               </li>
             
               <li class="toctree-l1">
@@ -77,27 +87,9 @@
     <a class="" href="../examples/">Examples</a>
               </li>
             
-              <li class="toctree-l1 current">
+              <li class="toctree-l1">
                 
-    <a class="current" href="./">Tutorial</a>
-        <!--
-        <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#crafting-your-idea">Crafting your idea</a></li>
-
-    <li class="toctree-l2"><a href="#get-the-tools">Get the tools</a></li>
-
-    <li class="toctree-l2"><a href="#write-your-contract">Write your contract</a></li>
-
-    <li class="toctree-l2"><a href="#build-the-interface">Build the interface</a></li>
-
-    <li class="toctree-l2"><a href="#test-your-app">Test your app</a></li>
-
-    <li class="toctree-l2"><a href="#deploy-it-to-the-network">Deploy it to the network</a></li>
-
-    <li class="toctree-l2"><a href="#deploy-your-interface">Deploy your interface</a></li>
-
-        </ul> -->
+    <a class="" href="../tutorial/">Tutorial</a>
               </li>
             
               <li class="toctree-l1">
@@ -134,7 +126,7 @@
     
       
     
-    <li>Tutorial</li>
+    <li>Sending Transactions</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -143,40 +135,34 @@
           <div role="main">
             <div class="section">
               
-                <h1>Tutorial</h1>
-                <p>Learn how to build your own decentralized app on Ethereum using Bitski. We'll walk you through the process step by step.</p>
-<h3 id="crafting-your-idea">Crafting your idea</h3>
-<ul>
-<li>Thinking decentralized</li>
-</ul>
-<h3 id="get-the-tools">Get the tools</h3>
-<ul>
-<li>Truffle</li>
-<li>Webpack</li>
-<li>Solidity plugin for editor</li>
-<li>Bitski SDK</li>
-</ul>
-<h3 id="write-your-contract">Write your contract</h3>
-<ul>
-<li>Solidity</li>
-</ul>
-<h3 id="build-the-interface">Build the interface</h3>
-<ul>
-<li>Webpack</li>
-</ul>
-<h3 id="test-your-app">Test your app</h3>
-<ul>
-<li>Truffle test?</li>
-<li>Running locally?</li>
-</ul>
-<h3 id="deploy-it-to-the-network">Deploy it to the network</h3>
-<ul>
-<li>App wallet &amp; truffle config</li>
-</ul>
-<h3 id="deploy-your-interface">Deploy your interface</h3>
-<ul>
-<li>Heroku?</li>
-</ul>
+                <h1>Sending Transactions</h1>
+                <p>One of the main differences with using Bitski's wallet in your app over Metamask or other wallet providers is in the send transaction flow.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>When you submit a transaction via <code>sendTransaction(...)</code>, our SDK will pick up the transaction and show an approval dialog to the user. For security this approval dialog is hosted on Bitski's website. The user can then review the details of the transaction, and either approve it or reject it.</p>
+<p>On the web, we show the dialog as a modal over your web app. On iOS, this happens in a Safari modal that displays over the native app.</p>
+<p>If the user approves the transaction, Bitski will sign the transaction, submit it to the network, and return the transaction hash just like any other wallet. If the user declines the transaction, we will return an error.</p>
+<h2 id="optional-fields">Optional fields</h2>
+<p>Bitski does not require all fields of a transaction to be submitted in order to process a transaction. The following fields are optional:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nonce</td>
+<td>Bitski will calculate the next nonce for you.</td>
+</tr>
+<tr>
+<td>gasPrice</td>
+<td>Bitski will calculate a gas price for you based on a the current averages.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gas">Gas</h2>
+<p>We believe that most people don't want to have to think about gas and gas prices. They are confusing terms and concepts. In our transaction approval screen we display gas as a transaction fee, and don't currently offer the ability to customize it. This creates an experience that is more familiar to most people.</p>
               
             </div>
           </div>
@@ -184,10 +170,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../faq/" class="btn btn-neutral float-right" title="FAQ">Next &rarr;</a>
+        <a href="../examples/" class="btn btn-neutral float-right" title="Examples">Next &rarr;</a>
       
       
-        <a href="../examples/" class="btn btn-neutral" title="Examples">&larr; Previous</a>
+        <a href="../client-settings/" class="btn btn-neutral" title="Client Settings">&larr; Previous</a>
       
     </div>
   

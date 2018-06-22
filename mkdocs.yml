@@ -5,6 +5,7 @@ pages:
   - Getting Started: getting-started.md
   - Authentication: oauth.md
   - Client Settings: client-settings.md
+  - Sending Transactions: transactions.md
   - Examples: examples.md
   - Tutorial: tutorial.md
   - FAQ: faq.md
@@ -14,3 +15,4 @@ theme:
 plugins:
   - search
 copyright: © 2018 Out There Labs, Inc.
+extra_javascript:
