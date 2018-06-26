@@ -178,13 +178,14 @@
 <p>We have a simple Truffle plugin that makes deploying contracts with your App Wallet easy. Read more about it <a href="https://github.com/BitskiCo/bitski-truffle-provider">here</a>.</p>
 <h2 id="submitting-transactions">Submitting transactions</h2>
 <p>You can also use standard Web3 apis on your backend to perform anything you want using your wallet. Here's how it works:</p>
-<p>First, you'll use your client id and secret to request an access token using OAuth Client Credentials. Most platforms have a library that can handle this step for you. Your token has a relatively short lifespan, so you'll probably want to perform this step before every request.</p>
+<p>First, you'll use your client id and secret to request an access token using OAuth Client Credentials. Most platforms have a library that can handle this step for you. Your token has a relatively short lifespan, so you'll probably want to perform this step before every request. You must request the scope <code>eth_sign</code>.</p>
 <pre><code class="text">POST /oauth2/token HTTP/2
 Host: https://account.bitski.com
 
 grant_type=client_credentials
 &amp;client_id=YOUR CLIENT ID
 &amp;client_secret=YOUR CLIENT SECRET
+&amp;scope=eth_sign
 </code></pre>
 
 <pre><code class="text">HTTP/2 200 OK
@@ -196,7 +197,7 @@ Pragma: no-cache
   &quot;access_token&quot;: &quot;YOUR ACCESS TOKEN&quot;,
   &quot;token_type&quot;: &quot;bearer&quot;,
   &quot;expires_in&quot;: 3600,
-  &quot;scope&quot;: &quot;&quot;
+  &quot;scope&quot;: &quot;eth_sign&quot;
 }
 </code></pre>
 
