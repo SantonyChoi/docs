@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Bitski lets you build \nuser-friendly\n and \ncross-platform\n Ethereum apps. Using Bitski, you can build a decentralized app or game that feels just as easy to use as a standard app.\n\n\nWe provide you with access to the Ethereum network through our hosted nodes, and provide access to the user's wallet using OAuth. \nLearn More\n.\n\n\nShortcuts\n\n\n\n\nNeed an account? \nSign up here\n.\n\n\nLearn more how it works in our \noverview\n.\n\n\nReady to start building? Check out \ngetting started\n.\n\n\nGot questions? Chat with us in our \nDiscord\n.\n\n\n\n\nPlatforms\n\n\nWe have SDKs for easy integration with various platforms. You can find more information on each SDK below.\n\n\n\n\nJavaScript\n\n\niOS\n\n\n\n\nFAQ\n\n\nWe've compiled a list of common questions \nhere\n.", 
+            "text": "Bitski lets you build \nuser-friendly\n and \ncross-platform\n Ethereum apps. Using Bitski, you can build a decentralized app or game that feels just as easy to use as a standard app.\n\n\nWe provide you with access to the Ethereum network through our hosted nodes, and provide access to the user's wallet using OAuth. \nLearn More\n.\n\n\nShortcuts\n\n\n\n\nNeed an account? \nSign up here\n.\n\n\nLearn more how it works in our \noverview\n.\n\n\nReady to start building? Check out \ngetting started\n.\n\n\nGot questions? Chat with us in our \nDiscord\n.\n\n\n\n\nPlatforms\n\n\nWe have SDKs for easy integration with various platforms. You can find more information on each SDK below.\n\n\n\n\nJavaScript\n \u2013\u00a0Integrate Bitski with your web app\n\n\niOS\n \u2013 Integrate Bitski with your iOS app\n\n\nTruffle\n \u2013 Deploy contracts using your Bitski app wallet\n\n\n\n\nFAQ\n\n\nWe've compiled a list of common questions \nhere\n.", 
             "title": "Home"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#platforms", 
-            "text": "We have SDKs for easy integration with various platforms. You can find more information on each SDK below.   JavaScript  iOS", 
+            "text": "We have SDKs for easy integration with various platforms. You can find more information on each SDK below.   JavaScript  \u2013\u00a0Integrate Bitski with your web app  iOS  \u2013 Integrate Bitski with your iOS app  Truffle  \u2013 Deploy contracts using your Bitski app wallet", 
             "title": "Platforms"
         }, 
         {
@@ -22,7 +22,7 @@
         }, 
         {
             "location": "/overview/", 
-            "text": "What is Bitski\n\n\nBitski lets you build \nuser-friendly\n and \ncross-platform\n Ethereum apps. Using Bitski, you can build a decentralized app or game that feels just as easy to use as a standard app.\n\n\nAs a developer, you can:\n\n\n\n\nConnect to the Ethereum network through our hosted nodes\n\n\nRequest access to a user's address\n\n\nSubmit transactions for approval on behalf of a user\n\n\nCreate and manage a wallet for your app\n\n\nDeploy contracts through your app wallet\n\n\n\n\nAs a user, you can:\n\n\n\n\nUse Ethereum apps without installing any software\n\n\nStore ethereum assets in our secure wallet\n\n\nAccess wallet from any device\n\n\nManage access to any apps you connect\n\n\nRecover your account at any time\n\n\n\n\nHow it works\n\n\nWe use OAuth to provide access to a user's wallet. Through our SDK your app can request access to a users Bitski account. If permission is granted, your app can then use standard tools like web3.js to interact with the Ethereum network. Learn more in \nAuthentication\n.\n\n\nWhy Bitski?\n\n\nMuch easier onboarding\n\n\nYour users will not have to install any extra software to use your app. They can use it just like any other website or app. Once a user already has a Bitski account, they will be able to sign in with just 2 clicks!\n\n\nCross-platform\n\n\nSince our wallets are managed in the cloud instead of tied to a specific device, you can access them from anywhere without compromising security.\n\n\nSecured with hardware\n\n\nUnlike most current wallets which are stored locally on your computer, our wallets are stored in tamper-proof hardware signing modules. The keys never leave the hardware. We believe this is far more secure.\n\n\nFully recoverable accounts\n\n\nSince your wallet is tied to your user account, it can be recovered if you forget your password. This kind of recovery is more secure than writing down a recovery phrase.", 
+            "text": "What is Bitski\n\n\nBitski lets you build \nuser-friendly\n and \ncross-platform\n Ethereum apps. Using Bitski, you can build a decentralized app or game that feels just as easy to use as a standard app.\n\n\nAs a developer, you can:\n\n\n\n\nConnect to the Ethereum network through our hosted nodes\n\n\nRequest access to a user's address\n\n\nSubmit transactions for approval on behalf of a user\n\n\nCreate and manage a wallet for your app\n\n\nDeploy contracts through your app wallet\n\n\n\n\nAs a user, you can:\n\n\n\n\nUse Ethereum apps without installing any software\n\n\nStore ethereum assets in our secure wallet\n\n\nAccess wallet from any device\n\n\nManage access to any apps you connect\n\n\nRecover your account at any time\n\n\n\n\nHow it works\n\n\nWe use OAuth to provide access to a user's wallet. Through our SDK your app can request access to a user's Bitski account. If permission is granted, your app can then use standard tools like web3.js to interact with the Ethereum network. Learn more in \nAuthentication\n.\n\n\nWhy Bitski?\n\n\nMuch easier onboarding\n\n\nYour users will not have to install any extra software to use your app. They can use it just like any other website or app. Once a user already has a Bitski account, they will be able to sign in with just 2 clicks!\n\n\nCross-platform\n\n\nSince our wallets are managed in the cloud instead of tied to a specific device, you can access them from anywhere without compromising security.\n\n\nSecured with hardware\n\n\nUnlike most current wallets which are stored locally on your computer, our wallets are stored in tamper-proof hardware security modules. The keys never leave the hardware. We believe this is far more secure.\n\n\nFully recoverable accounts\n\n\nSince your wallet is tied to your user account, it can be recovered if you forget your password. This kind of recovery is more secure than writing down a recovery phrase.", 
             "title": "Overview"
         }, 
         {
@@ -42,7 +42,7 @@
         }, 
         {
             "location": "/overview/#how-it-works", 
-            "text": "We use OAuth to provide access to a user's wallet. Through our SDK your app can request access to a users Bitski account. If permission is granted, your app can then use standard tools like web3.js to interact with the Ethereum network. Learn more in  Authentication .", 
+            "text": "We use OAuth to provide access to a user's wallet. Through our SDK your app can request access to a user's Bitski account. If permission is granted, your app can then use standard tools like web3.js to interact with the Ethereum network. Learn more in  Authentication .", 
             "title": "How it works"
         }, 
         {
@@ -62,7 +62,7 @@
         }, 
         {
             "location": "/overview/#secured-with-hardware", 
-            "text": "Unlike most current wallets which are stored locally on your computer, our wallets are stored in tamper-proof hardware signing modules. The keys never leave the hardware. We believe this is far more secure.", 
+            "text": "Unlike most current wallets which are stored locally on your computer, our wallets are stored in tamper-proof hardware security modules. The keys never leave the hardware. We believe this is far more secure.", 
             "title": "Secured with hardware"
         }, 
         {
@@ -117,18 +117,13 @@
         }, 
         {
             "location": "/client-settings/", 
-            "text": "You can configure your app's settings from the \ndeveloper portal\n. Here some of the things you can configure, and what they mean.\n\n\nApp Info\n\n\nThis is metadata about your app that gives users more context. We will feature these details in our interface when we are presenting requests from your app or referencing your app.\n\n\nApproved Scopes\n\n\nThese are the scopes that clients using your \nclient id\n can request. By default \nopenid\n is the only scope that is approved. Requesting a scope that isn't approved for your app here will result in an error.\n\n\nCallback URLs\n\n\nThese are approved URLs that clients using your \nclient id\n can ask to be redirected to. It's important to keep this list as small as possible so malicious apps cannot pose as you. If a client asks to be redirected to a URL that is not on this list, they will receive an error.", 
+            "text": "You can configure your app's settings from the \ndeveloper portal\n. Here some of the things you can configure, and what they mean.\n\n\nApp Info\n\n\nThis is metadata about your app that gives users more context. We will feature these details in our interface when we are presenting requests from your app or referencing your app.\n\n\nCallback URLs\n\n\nThese are approved URLs that clients using your \nclient id\n can ask to be redirected to. It's important to keep this list as small as possible so malicious apps cannot pose as you. If a client asks to be redirected to a URL that is not on this list, they will receive an error.", 
             "title": "Client Settings"
         }, 
         {
             "location": "/client-settings/#app-info", 
             "text": "This is metadata about your app that gives users more context. We will feature these details in our interface when we are presenting requests from your app or referencing your app.", 
             "title": "App Info"
-        }, 
-        {
-            "location": "/client-settings/#approved-scopes", 
-            "text": "These are the scopes that clients using your  client id  can request. By default  openid  is the only scope that is approved. Requesting a scope that isn't approved for your app here will result in an error.", 
-            "title": "Approved Scopes"
         }, 
         {
             "location": "/client-settings/#callback-urls", 
@@ -187,7 +182,7 @@
         }, 
         {
             "location": "/examples/", 
-            "text": "These examples are a great way to quickly dive in and see how you can integrate Bitski into a dapp on the platforms we support. Both of these examples use the same contract and assets to demonstrate how you can use Bitski to build cross-platform dapps.\n\n\nWeb based Dapp\n\n\n\n\nVisit our demo here\n \nView the code\n\n\nRunning the example\n\n\n\n\niOS Dapp\n\n\n\n  \n\n  \n\n\n\n\n\nOur demo dapp is not available on the App Store yet, but you can still easily run it yourself from Xcode.\n\n\nView the code\n\n\nRunning the example\n\n\nYou'll need Xcode 9 and CocoaPods to build the example.\n\n\nStart by installing the dependencies.\n\n\npod install\n\n\n\n\nThen, simply open the workspace in Xcode and run the project.", 
+            "text": "These examples are a great way to quickly dive in and see how you can integrate Bitski into a dapp on the platforms we support. Both of these examples use the same contract and assets to demonstrate how you can use Bitski to build cross-platform dapps.\n\n\nWeb based Dapp\n\n\n\n\nVisit our demo here\n \nView the code\n\n\n\n\niOS Dapp\n\n\n\n  \n\n  \n\n\n\n\n\nOur demo dapp is not available on the App Store yet, but you can still easily run it yourself from Xcode.\n\n\nView the code", 
             "title": "Examples"
         }, 
         {
@@ -196,19 +191,9 @@
             "title": "Web based Dapp"
         }, 
         {
-            "location": "/examples/#running-the-example", 
-            "text": "", 
-            "title": "Running the example"
-        }, 
-        {
             "location": "/examples/#ios-dapp", 
             "text": "Our demo dapp is not available on the App Store yet, but you can still easily run it yourself from Xcode.  View the code", 
             "title": "iOS Dapp"
-        }, 
-        {
-            "location": "/examples/#running-the-example_1", 
-            "text": "You'll need Xcode 9 and CocoaPods to build the example.  Start by installing the dependencies.  pod install  Then, simply open the workspace in Xcode and run the project.", 
-            "title": "Running the example"
         }, 
         {
             "location": "/faq/", 
