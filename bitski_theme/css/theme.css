@@ -106,6 +106,10 @@
    font-variant-ligatures: none;
  }
 
+ video {
+   margin-bottom: 1rem;
+ }
+
  /* Inline Elements */
 
  a {
@@ -136,6 +140,7 @@
    background: #C1DCF9;
    border-radius: 0.3rem;
    color: #194DD0;
+   font-family: 'PressuraMono';
  }
 
  a.btn:hover {
@@ -157,6 +162,7 @@
   padding: 0;
   margin: 2rem 0;
   font-family: 'PressuraMono';
+  font-variant-ligatures: none;
   font-weight: bold;
 }
 
@@ -209,6 +215,7 @@
 
 .wy-nav-side {
   font-family: 'PressuraMono';
+  font-variant-ligatures: none;
   -webkit-font-smoothing: antialiased;
 }
 

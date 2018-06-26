@@ -6,8 +6,8 @@ pages:
   - Authentication: oauth.md
   - Client Settings: client-settings.md
   - Sending Transactions: transactions.md
+  - App Wallets: app-wallet.md
   - Examples: examples.md
-  - Tutorial: tutorial.md
   - FAQ: faq.md
 theme:
   name: null
