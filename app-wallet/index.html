@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Tutorial - Bitski Docs</title>
+  <title>App Wallets - Bitski Docs</title>
   <link rel="stylesheet" href="../css/fonts.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
@@ -16,9 +16,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Tutorial";
-    var mkdocs_page_input_path = "tutorial.md";
-    var mkdocs_page_url = "/tutorial/";
+    var mkdocs_page_name = "App Wallets";
+    var mkdocs_page_input_path = "app-wallet.md";
+    var mkdocs_page_url = "/app-wallet/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -72,32 +72,26 @@
     <a class="" href="../transactions/">Sending Transactions</a>
               </li>
             
-              <li class="toctree-l1">
-                
-    <a class="" href="../examples/">Examples</a>
-              </li>
-            
               <li class="toctree-l1 current">
                 
-    <a class="current" href="./">Tutorial</a>
+    <a class="current" href="./">App Wallets</a>
         <!--
         <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#crafting-your-idea">Crafting your idea</a></li>
+    <li class="toctree-l2"><a href="#getting-a-client-id-secret">Getting a Client ID &amp; Secret</a></li>
 
-    <li class="toctree-l2"><a href="#get-the-tools">Get the tools</a></li>
+    <li class="toctree-l2"><a href="#funding-your-dev-wallet">Funding your dev wallet</a></li>
 
-    <li class="toctree-l2"><a href="#write-your-contract">Write your contract</a></li>
+    <li class="toctree-l2"><a href="#deploying-contracts-with-truffle">Deploying Contracts with Truffle</a></li>
 
-    <li class="toctree-l2"><a href="#build-the-interface">Build the interface</a></li>
-
-    <li class="toctree-l2"><a href="#test-your-app">Test your app</a></li>
-
-    <li class="toctree-l2"><a href="#deploy-it-to-the-network">Deploy it to the network</a></li>
-
-    <li class="toctree-l2"><a href="#deploy-your-interface">Deploy your interface</a></li>
+    <li class="toctree-l2"><a href="#submitting-transactions">Submitting transactions</a></li>
 
         </ul> -->
+              </li>
+            
+              <li class="toctree-l1">
+                
+    <a class="" href="../examples/">Examples</a>
               </li>
             
               <li class="toctree-l1">
@@ -110,6 +104,7 @@
           <ul class="platforms">
             <li class="toctree-l1"><a href="https://github.com/BitskiCo/bitski-js-sdk">JavaScript</a></li>
             <li class="toctree-l1"><a href="https://github.com/BitskiCo/BitskiSDK">iOS</a></li>
+            <li class="toctree-l1"><a href="https://github.com/BitskiCo/bitski-truffle-provider">Truffle</a></li>
           </ul>
       </div>
       &nbsp;
@@ -134,7 +129,7 @@
     
       
     
-    <li>Tutorial</li>
+    <li>App Wallets</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -143,40 +138,27 @@
           <div role="main">
             <div class="section">
               
-                <h1>Tutorial</h1>
-                <p>Learn how to build your own decentralized app on Ethereum using Bitski. We'll walk you through the process step by step.</p>
-<h3 id="crafting-your-idea">Crafting your idea</h3>
-<ul>
-<li>Thinking decentralized</li>
-</ul>
-<h3 id="get-the-tools">Get the tools</h3>
-<ul>
-<li>Truffle</li>
-<li>Webpack</li>
-<li>Solidity plugin for editor</li>
-<li>Bitski SDK</li>
-</ul>
-<h3 id="write-your-contract">Write your contract</h3>
-<ul>
-<li>Solidity</li>
-</ul>
-<h3 id="build-the-interface">Build the interface</h3>
-<ul>
-<li>Webpack</li>
-</ul>
-<h3 id="test-your-app">Test your app</h3>
-<ul>
-<li>Truffle test?</li>
-<li>Running locally?</li>
-</ul>
-<h3 id="deploy-it-to-the-network">Deploy it to the network</h3>
-<ul>
-<li>App wallet &amp; truffle config</li>
-</ul>
-<h3 id="deploy-your-interface">Deploy your interface</h3>
-<ul>
-<li>Heroku?</li>
-</ul>
+                <h1>App Wallets</h1>
+                <p>In addition to managing wallets for users of your dapp, Bitski can also manage a wallet for your dapp itself. This makes it much easier to manage funding, deploying, and migrating your dapp's contracts.</p>
+<p>On top of that, you can use your app wallet to securely perform any transactions you want from your backend using OAuth.</p>
+<h2 id="getting-a-client-id-secret">Getting a Client ID &amp; Secret</h2>
+<p>While we are in private beta this is a manual process. You can request an app wallet here. Once we create one for you, you can visit the <a href="https://developer.bitski.com">Developer Portal</a> to see your credentials. Make sure to keep these keys a secret, because we will sign any transaction that is submitted using them.</p>
+<h2 id="funding-your-dev-wallet">Funding your dev wallet</h2>
+<p>This is currently a manual process as well. We recommend buying ETH from a third-party such as <a href="https://coinbase.com" target="_blank">Coinbase</a> and sending it to your app wallet's address. You can find your address in the <a href="https://developer.bitski.com">Developer Portal</a>.</p>
+<h2 id="deploying-contracts-with-truffle">Deploying Contracts with Truffle</h2>
+<p>We have a simple Truffle plugin that makes deploying contracts with your App Wallet easy. Read more about it <a href="https://github.com/BitskiCo/bitski-truffle-plugin">here</a>.</p>
+<h2 id="submitting-transactions">Submitting transactions</h2>
+<p>You can also use standard Web3 apis on your backend to perform anything you want using your wallet. Here's how it works:</p>
+<p>First, you'll use your client id and secret to request an access token. This token has a short lifespan, so you'll probably want to perform this step before every request.</p>
+<pre><code>// CURL EXAMPLE
+</code></pre>
+
+<p>Once you have an access token, you must add that to the Authorization header for your API request. We support all the standard Web3 JSON-RPC methods, so you can use any Web3 client to send these transactions.</p>
+<pre><code>// CURL EXAMPLE
+</code></pre>
+
+<p>Assuming your token is valid, your app wallet is funded, and the transaction is valid, it will be signed. There are currently no restrictions on what types of transactions will be signed, but we are considering this in the future.</p>
+<p>Transactions submitted via this API must include all fields with the exception of <em>nonce</em>.</p>
               
             </div>
           </div>
@@ -184,10 +166,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../faq/" class="btn btn-neutral float-right" title="FAQ">Next &rarr;</a>
+        <a href="../examples/" class="btn btn-neutral float-right" title="Examples">Next &rarr;</a>
       
       
-        <a href="../examples/" class="btn btn-neutral" title="Examples">&larr; Previous</a>
+        <a href="../transactions/" class="btn btn-neutral" title="Sending Transactions">&larr; Previous</a>
       
     </div>
   

@@ -156,6 +156,31 @@
             "title": "Gas"
         }, 
         {
+            "location": "/app-wallet/", 
+            "text": "In addition to managing wallets for users of your dapp, Bitski can also manage a wallet for your dapp itself. This makes it much easier to manage funding, deploying, and migrating your dapp's contracts.\n\n\nOn top of that, you can use your app wallet to securely perform any transactions you want from your backend using OAuth.\n\n\nGetting a Client ID \n Secret\n\n\nWhile we are in private beta this is a manual process. You can request an app wallet here. Once we create one for you, you can visit the \nDeveloper Portal\n to see your credentials. Make sure to keep these keys a secret, because we will sign any transaction that is submitted using them.\n\n\nFunding your dev wallet\n\n\nThis is currently a manual process as well. We recommend buying ETH from a third-party such as \nCoinbase\n and sending it to your app wallet's address. You can find your address in the \nDeveloper Portal\n.\n\n\nDeploying Contracts with Truffle\n\n\nWe have a simple Truffle plugin that makes deploying contracts with your App Wallet easy. Read more about it \nhere\n.\n\n\nSubmitting transactions\n\n\nYou can also use standard Web3 apis on your backend to perform anything you want using your wallet. Here's how it works:\n\n\nFirst, you'll use your client id and secret to request an access token. This token has a short lifespan, so you'll probably want to perform this step before every request.\n\n\n// CURL EXAMPLE\n\n\n\n\nOnce you have an access token, you must add that to the Authorization header for your API request. We support all the standard Web3 JSON-RPC methods, so you can use any Web3 client to send these transactions.\n\n\n// CURL EXAMPLE\n\n\n\n\nAssuming your token is valid, your app wallet is funded, and the transaction is valid, it will be signed. There are currently no restrictions on what types of transactions will be signed, but we are considering this in the future.\n\n\nTransactions submitted via this API must include all fields with the exception of \nnonce\n.", 
+            "title": "App Wallets"
+        }, 
+        {
+            "location": "/app-wallet/#getting-a-client-id-secret", 
+            "text": "While we are in private beta this is a manual process. You can request an app wallet here. Once we create one for you, you can visit the  Developer Portal  to see your credentials. Make sure to keep these keys a secret, because we will sign any transaction that is submitted using them.", 
+            "title": "Getting a Client ID &amp; Secret"
+        }, 
+        {
+            "location": "/app-wallet/#funding-your-dev-wallet", 
+            "text": "This is currently a manual process as well. We recommend buying ETH from a third-party such as  Coinbase  and sending it to your app wallet's address. You can find your address in the  Developer Portal .", 
+            "title": "Funding your dev wallet"
+        }, 
+        {
+            "location": "/app-wallet/#deploying-contracts-with-truffle", 
+            "text": "We have a simple Truffle plugin that makes deploying contracts with your App Wallet easy. Read more about it  here .", 
+            "title": "Deploying Contracts with Truffle"
+        }, 
+        {
+            "location": "/app-wallet/#submitting-transactions", 
+            "text": "You can also use standard Web3 apis on your backend to perform anything you want using your wallet. Here's how it works:  First, you'll use your client id and secret to request an access token. This token has a short lifespan, so you'll probably want to perform this step before every request.  // CURL EXAMPLE  Once you have an access token, you must add that to the Authorization header for your API request. We support all the standard Web3 JSON-RPC methods, so you can use any Web3 client to send these transactions.  // CURL EXAMPLE  Assuming your token is valid, your app wallet is funded, and the transaction is valid, it will be signed. There are currently no restrictions on what types of transactions will be signed, but we are considering this in the future.  Transactions submitted via this API must include all fields with the exception of  nonce .", 
+            "title": "Submitting transactions"
+        }, 
+        {
             "location": "/examples/", 
             "text": "These examples are a great way to quickly dive in and see how you can integrate Bitski into a dapp on the platforms we support. Both of these examples use the same contract and assets to demonstrate how you can use Bitski to build cross-platform dapps.\n\n\nWeb based Dapp\n\n\n\n\nVisit our demo here\n \nView the code\n\n\nRunning the example\n\n\nFirst, install the dependencies.\n\n\nnpm install\n\n\n\n\nNext, you'll need to use Truffle to deploy the contracts on one of Bitski's supported networks (Kovan or Rinkeby).\n\n\nInstall a local Ethereum node (Parity, or Geth), and configure your truffle.js to point at it, and run:\n\n\ntruffle migrate\n\n\n\n\nOnce the contracts are deployed, you can run to start the development server. You can learn more about deploying contracts with truffle here.\n\n\nnpm run dev\n\n\n\n\nThen browse to http://localhost:3000\n\n\n\n\niOS Dapp\n\n\n\n  \n\n  \n\n\n\n\n\nOur demo dapp is not available on the App Store yet, but you can still easily run it yourself from Xcode.\n\n\nView the code\n\n\nRunning the example\n\n\nYou'll need Xcode 9 and CocoaPods to build the example.\n\n\nStart by installing the dependencies.\n\n\npod install\n\n\n\n\nThen, simply open the workspace in Xcode and run the project.", 
             "title": "Examples"
@@ -181,48 +206,8 @@
             "title": "Running the example"
         }, 
         {
-            "location": "/tutorial/", 
-            "text": "Learn how to build your own decentralized app on Ethereum using Bitski. We'll walk you through the process step by step.\n\n\nCrafting your idea\n\n\n\n\nThinking decentralized\n\n\n\n\nGet the tools\n\n\n\n\nTruffle\n\n\nWebpack\n\n\nSolidity plugin for editor\n\n\nBitski SDK\n\n\n\n\nWrite your contract\n\n\n\n\nSolidity\n\n\n\n\nBuild the interface\n\n\n\n\nWebpack\n\n\n\n\nTest your app\n\n\n\n\nTruffle test?\n\n\nRunning locally?\n\n\n\n\nDeploy it to the network\n\n\n\n\nApp wallet \n truffle config\n\n\n\n\nDeploy your interface\n\n\n\n\nHeroku?", 
-            "title": "Tutorial"
-        }, 
-        {
-            "location": "/tutorial/#crafting-your-idea", 
-            "text": "Thinking decentralized", 
-            "title": "Crafting your idea"
-        }, 
-        {
-            "location": "/tutorial/#get-the-tools", 
-            "text": "Truffle  Webpack  Solidity plugin for editor  Bitski SDK", 
-            "title": "Get the tools"
-        }, 
-        {
-            "location": "/tutorial/#write-your-contract", 
-            "text": "Solidity", 
-            "title": "Write your contract"
-        }, 
-        {
-            "location": "/tutorial/#build-the-interface", 
-            "text": "Webpack", 
-            "title": "Build the interface"
-        }, 
-        {
-            "location": "/tutorial/#test-your-app", 
-            "text": "Truffle test?  Running locally?", 
-            "title": "Test your app"
-        }, 
-        {
-            "location": "/tutorial/#deploy-it-to-the-network", 
-            "text": "App wallet   truffle config", 
-            "title": "Deploy it to the network"
-        }, 
-        {
-            "location": "/tutorial/#deploy-your-interface", 
-            "text": "Heroku?", 
-            "title": "Deploy your interface"
-        }, 
-        {
             "location": "/faq/", 
-            "text": "Here are some answers to the questions we get asked most often.\n\n\nWhat networks do you support?\n\n\nBitski currently supports only the Kovan and Rinkeby test networks. However, we will have support for the main Ethereum network soon.\n\n\n\n\nWhat's your policy on information/user ownership?\n\n\nComing soon.\n\n\n\n\nHow much does Bitski charge?\n\n\nBitski is currently free of charge for users and developers.\n\n\n\n\nIs Bitski open source?\n\n\nWe are partially open source. Our SDKs are open source, but the code that powers our website and infrastructure is primarily not.\n\n\n\n\nWhy should I not just do my own key storage for new users?\n\n\nSecure key storage is very challenging, and a siloed approach will be inconvenient for your users. Users will have to fund this wallet separately, and can only manage their assets through your interface.\n\n\n\n\nCan I use my Bitski account with Dapps that do not use the Bitski SDK?\n\n\nCurrently no. This is something we are planning to address with a browser extension soon.\n\n\n\n\nHow much can I brand the Bitski transaction flow\n\n\nCurrently there is no customization of the transaction flow.\n\n\n\n\nI already have an app that uses Metamask, can I use Bitski?\n\n\nYes, they can. It doesn't negate any other wallet. It improves the dapp experience.\n\n\n\n\nHow do I submit my dApp for Bitski?\n\n\nYou can request access from our Developer Portal.\n\n\n\n\nHow are you storing private keys?\n\n\nOur keys are both created and stored on our HSMs (Hardware Security Module). Approved transactions are passed to the HSM to sign. The keys never leave the hardware.\n\n\n\n\nDo you have an Android SDK?\n\n\nNot at the moment, but that is on our roadmap.\n\n\n\n\nHow should I integrate Bitski in my dapp?\n\n\nA good place to start is to put our sign in button wherever you're currently asking people to install Metamask.\n\n\n\n\nHow much lock in is there when building with Bitski?\n\n\nBitski has about as much lock in as other wallet providers. Since your users will presumably store assets from your app in our wallet, they will need Bitski to continue to use those assets. However, if the asset is transferrable, the user could decide to move them to another wallet instead.\n\n\n\n\nCan Bitski use ENS or Namecoin or other public naming systems?\n\n\nCurrently our wallet does not support sending to ENS names, or other public naming systems.\n\n\n\n\nCan I use Infura with Bitski?\n\n\nBitski provides the same services that Infura provides, so that would not be necessary.\n\n\n\n\nHow will users fund their wallet?\n\n\nFor ETH, currently they will need to use another service to purchase ETH with fiat currency, and transfer that to their Bitski wallet. Eventually we'll have a more integrated process.\n\n\nHowever, if you're working with digital assets, we suggest using our app wallet API to send assets to users directly. This prevents the need for the user to purchase ETH, while allowing them to have decentralized ownership.", 
+            "text": "Here are some answers to the questions we get asked most often.\n\n\nWhat networks do you support?\n\n\nBitski currently supports only the Kovan and Rinkeby test networks. However, we will have support for the main Ethereum network soon.\n\n\n\n\nHow much does Bitski charge?\n\n\nBitski is currently free of charge for users and developers.\n\n\n\n\nWhat are the benefits of Bitski managing key storage for new users?\n\n\nSecure key storage is very challenging, and a siloed approach will be inconvenient for your users. Users will have to fund this wallet separately, and can only manage their assets through your interface.\n\n\n\n\nHow should I integrate Bitski in my dapp?\n\n\nA great place to start is to put our sign in button wherever you're currently asking people to install Metamask.\n\n\n\n\nI already have an app that uses Metamask, can I use Bitski?\n\n\nThe Bitski SDK is designed to be compatible with other wallets and dapp browsers, while providing a great experience for users who don't already have a wallet. Learn more about integrating our JS SDK \nhere\n.\n\n\n\n\nHow are you storing and managing private keys?\n\n\nOur keys are both created and stored on our HSMs (Hardware Security Module). Approved transactions are passed to the HSM to sign. The keys never leave the hardware.\n\n\n\n\nDo you have an Android SDK?\n\n\nNot at the moment, but that is on our roadmap.\n\n\n\n\nHow will users fund their wallet?\n\n\nCurrently for ETH, users will need to use another service to purchase ETH with fiat currency, and transfer that to their Bitski wallet. We will eventually have a more integrated process.\n\n\nHowever, if you're working with digital assets, we suggest using our app wallet API to send assets to users directly. This prevents the need for the user to purchase ETH, while allowing them to have decentralized ownership.", 
             "title": "FAQ"
         }, 
         {
@@ -231,49 +216,29 @@
             "title": "What networks do you support?"
         }, 
         {
-            "location": "/faq/#whats-your-policy-on-informationuser-ownership", 
-            "text": "Coming soon.", 
-            "title": "What's your policy on information/user ownership?"
-        }, 
-        {
             "location": "/faq/#how-much-does-bitski-charge", 
             "text": "Bitski is currently free of charge for users and developers.", 
             "title": "How much does Bitski charge?"
         }, 
         {
-            "location": "/faq/#is-bitski-open-source", 
-            "text": "We are partially open source. Our SDKs are open source, but the code that powers our website and infrastructure is primarily not.", 
-            "title": "Is Bitski open source?"
-        }, 
-        {
-            "location": "/faq/#why-should-i-not-just-do-my-own-key-storage-for-new-users", 
+            "location": "/faq/#what-are-the-benefits-of-bitski-managing-key-storage-for-new-users", 
             "text": "Secure key storage is very challenging, and a siloed approach will be inconvenient for your users. Users will have to fund this wallet separately, and can only manage their assets through your interface.", 
-            "title": "Why should I not just do my own key storage for new users?"
+            "title": "What are the benefits of Bitski managing key storage for new users?"
         }, 
         {
-            "location": "/faq/#can-i-use-my-bitski-account-with-dapps-that-do-not-use-the-bitski-sdk", 
-            "text": "Currently no. This is something we are planning to address with a browser extension soon.", 
-            "title": "Can I use my Bitski account with Dapps that do not use the Bitski SDK?"
-        }, 
-        {
-            "location": "/faq/#how-much-can-i-brand-the-bitski-transaction-flow", 
-            "text": "Currently there is no customization of the transaction flow.", 
-            "title": "How much can I brand the Bitski transaction flow"
+            "location": "/faq/#how-should-i-integrate-bitski-in-my-dapp", 
+            "text": "A great place to start is to put our sign in button wherever you're currently asking people to install Metamask.", 
+            "title": "How should I integrate Bitski in my dapp?"
         }, 
         {
             "location": "/faq/#i-already-have-an-app-that-uses-metamask-can-i-use-bitski", 
-            "text": "Yes, they can. It doesn't negate any other wallet. It improves the dapp experience.", 
+            "text": "The Bitski SDK is designed to be compatible with other wallets and dapp browsers, while providing a great experience for users who don't already have a wallet. Learn more about integrating our JS SDK  here .", 
             "title": "I already have an app that uses Metamask, can I use Bitski?"
         }, 
         {
-            "location": "/faq/#how-do-i-submit-my-dapp-for-bitski", 
-            "text": "You can request access from our Developer Portal.", 
-            "title": "How do I submit my dApp for Bitski?"
-        }, 
-        {
-            "location": "/faq/#how-are-you-storing-private-keys", 
+            "location": "/faq/#how-are-you-storing-and-managing-private-keys", 
             "text": "Our keys are both created and stored on our HSMs (Hardware Security Module). Approved transactions are passed to the HSM to sign. The keys never leave the hardware.", 
-            "title": "How are you storing private keys?"
+            "title": "How are you storing and managing private keys?"
         }, 
         {
             "location": "/faq/#do-you-have-an-android-sdk", 
@@ -281,28 +246,8 @@
             "title": "Do you have an Android SDK?"
         }, 
         {
-            "location": "/faq/#how-should-i-integrate-bitski-in-my-dapp", 
-            "text": "A good place to start is to put our sign in button wherever you're currently asking people to install Metamask.", 
-            "title": "How should I integrate Bitski in my dapp?"
-        }, 
-        {
-            "location": "/faq/#how-much-lock-in-is-there-when-building-with-bitski", 
-            "text": "Bitski has about as much lock in as other wallet providers. Since your users will presumably store assets from your app in our wallet, they will need Bitski to continue to use those assets. However, if the asset is transferrable, the user could decide to move them to another wallet instead.", 
-            "title": "How much lock in is there when building with Bitski?"
-        }, 
-        {
-            "location": "/faq/#can-bitski-use-ens-or-namecoin-or-other-public-naming-systems", 
-            "text": "Currently our wallet does not support sending to ENS names, or other public naming systems.", 
-            "title": "Can Bitski use ENS or Namecoin or other public naming systems?"
-        }, 
-        {
-            "location": "/faq/#can-i-use-infura-with-bitski", 
-            "text": "Bitski provides the same services that Infura provides, so that would not be necessary.", 
-            "title": "Can I use Infura with Bitski?"
-        }, 
-        {
             "location": "/faq/#how-will-users-fund-their-wallet", 
-            "text": "For ETH, currently they will need to use another service to purchase ETH with fiat currency, and transfer that to their Bitski wallet. Eventually we'll have a more integrated process.  However, if you're working with digital assets, we suggest using our app wallet API to send assets to users directly. This prevents the need for the user to purchase ETH, while allowing them to have decentralized ownership.", 
+            "text": "Currently for ETH, users will need to use another service to purchase ETH with fiat currency, and transfer that to their Bitski wallet. We will eventually have a more integrated process.  However, if you're working with digital assets, we suggest using our app wallet API to send assets to users directly. This prevents the need for the user to purchase ETH, while allowing them to have decentralized ownership.", 
             "title": "How will users fund their wallet?"
         }
     ]
