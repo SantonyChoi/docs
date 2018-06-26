@@ -7,7 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.bitski.com/images/favicons/apple-icon-57x57-64e3c22a18ebe4b47427371088ae7d05.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.bitski.com/images/favicons/apple-icon-60x60-f95f3ba8922bfd6830a3c58d13b009b9.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.bitski.com/images/favicons/apple-icon-72x72-f94f7995714a1d580d2e38120ccc6ea3.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.bitski.com/images/favicons/apple-icon-76x76-7635c2ff46a560aa4e7bd0598df7b6c6.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.bitski.com/images/favicons/apple-icon-114x114-da81a72cd1c741d1d44ff9dc459950e0.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.bitski.com/images/favicons/apple-icon-120x120-8a85a3849fdb676a1706c54529c11851.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.bitski.com/images/favicons/apple-icon-144x144-dedcab4f2d04ac60a01c9f20c4bb2b6e.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.bitski.com/images/favicons/apple-icon-152x152-660ffa542cdffc03e6e93d617acd01e0.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.bitski.com/images/favicons/apple-icon-180x180-0b11f1aaed5c987dfe883fdd62424a20.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="https://www.bitski.com/images/favicons/android-icon-192x192-d1c01a4ea3dd75836e7f288cef0422d0.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.bitski.com/images/favicons/favicon-32x32-360a24858eb1714945579cc6d8da6c91.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://www.bitski.com/images/favicons/favicon-96x96-a52662f43ff5add653c55c3a51b8d2f6.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.bitski.com/images/favicons/favicon-16x16-e978dc584176d4384eaef9ad7c630760.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="https://www.bitski.com/images/favicons/ms-icon-144x144-a6f34a30ff9490656fa1e08b853cde4c.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:title" content="Bitski">
+  <meta property="og:description" content="Powering Usable Decentralized Applications">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.bitski.com/images/og-image-1b97111991741c0a684c40411011944e.png">
   <title>Examples - Bitski Docs</title>
   <link rel="stylesheet" href="../css/fonts.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -98,9 +119,13 @@
           </ul>
           <h4>SDKs</h4>
           <ul class="platforms">
+            
             <li class="toctree-l1"><a href="https://github.com/BitskiCo/bitski-js-sdk">JavaScript</a></li>
+            
             <li class="toctree-l1"><a href="https://github.com/BitskiCo/BitskiSDK">iOS</a></li>
+            
             <li class="toctree-l1"><a href="https://github.com/BitskiCo/bitski-truffle-provider">Truffle</a></li>
+            
           </ul>
       </div>
       &nbsp;
@@ -119,7 +144,7 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="..">Docs</a> <span class="divider">/</span></li>
     
@@ -134,26 +159,13 @@
           <div role="main">
             <div class="section">
               
-                <h1>Examples</h1>
+                
+                  <h1>Examples</h1>
+                
                 <p>These examples are a great way to quickly dive in and see how you can integrate Bitski into a dapp on the platforms we support. Both of these examples use the same contract and assets to demonstrate how you can use Bitski to build cross-platform dapps.</p>
 <h2 id="web-based-dapp">Web based Dapp</h2>
 <p><img alt="Screenshot" src="../public/web-dapp.png" /></p>
 <p><a href="https://example-dapp-1.bitski.com" target="_blank" class="btn">Visit our demo here</a> <a href="https://github.com/BitskiCo/example-dapp-game" target="_blank" class="btn">View the code</a></p>
-<h4 id="running-the-example">Running the example</h4>
-<p>First, install the dependencies.</p>
-<pre><code class="bash">npm install
-</code></pre>
-
-<p>Next, you'll need to use Truffle to deploy the contracts on one of Bitski's supported networks (Kovan or Rinkeby).</p>
-<p>Install a local Ethereum node (Parity, or Geth), and configure your truffle.js to point at it, and run:</p>
-<pre><code class="bash">truffle migrate
-</code></pre>
-
-<p>Once the contracts are deployed, you can run to start the development server. You can learn more about deploying contracts with truffle here.</p>
-<pre><code class="bash">npm run dev
-</code></pre>
-
-<p>Then browse to http://localhost:3000</p>
 <hr />
 <h2 id="ios-dapp">iOS Dapp</h2>
 <video autoplay loop muted playsinline preload style="width: 240px">
@@ -163,13 +175,6 @@
 
 <p>Our demo dapp is not available on the App Store yet, but you can still easily run it yourself from Xcode.</p>
 <p><a href="https://github.com/BitskiCo/example-native-dapp" target="_blank" class="btn">View the code</a></p>
-<h4 id="running-the-example_1">Running the example</h4>
-<p>You'll need Xcode 9 and CocoaPods to build the example.</p>
-<p>Start by installing the dependencies.</p>
-<pre><code class="bash">pod install
-</code></pre>
-
-<p>Then, simply open the workspace in Xcode and run the project.</p>
               
             </div>
           </div>
@@ -208,6 +213,13 @@
     <script src="../js/theme.js" defer></script>
       <script src="../search/require.js" defer></script>
       <script src="../search/search.js" defer></script>
-
+  <script>
+    //Set your APP_ID
+    var APP_ID = "ypzoqtmj";
+    window.intercomSettings = {
+        app_id: APP_ID
+    };
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/' + APP_ID;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+  </script>
 </body>
 </html>

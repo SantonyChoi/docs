@@ -9,6 +9,14 @@ pages:
   - App Wallets: app-wallet.md
   - Examples: examples.md
   - FAQ: faq.md
+extra:
+  sdks:
+    - name: JavaScript
+      url: https://github.com/BitskiCo/bitski-js-sdk
+    - name: iOS
+      url: https://github.com/BitskiCo/BitskiSDK
+    - name: Truffle
+      url: https://github.com/BitskiCo/bitski-truffle-provider
 theme:
   name: null
   custom_dir: bitski_theme

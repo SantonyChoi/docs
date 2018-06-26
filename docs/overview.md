@@ -18,7 +18,7 @@ Bitski lets you build *user-friendly* and *cross-platform* Ethereum apps. Using 
 
 ## How it works
 
-We use OAuth to provide access to a user's wallet. Through our SDK your app can request access to a users Bitski account. If permission is granted, your app can then use standard tools like web3.js to interact with the Ethereum network. Learn more in [Authentication](oauth.md).
+We use OAuth to provide access to a user's wallet. Through our SDK your app can request access to a user's Bitski account. If permission is granted, your app can then use standard tools like web3.js to interact with the Ethereum network. Learn more in [Authentication](oauth.md).
 
 ## Why Bitski?
 
@@ -32,7 +32,7 @@ Since our wallets are managed in the cloud instead of tied to a specific device,
 
 #### Secured with hardware
 
-Unlike most current wallets which are stored locally on your computer, our wallets are stored in tamper-proof hardware signing modules. The keys never leave the hardware. We believe this is far more secure.
+Unlike most current wallets which are stored locally on your computer, our wallets are stored in tamper-proof hardware security modules. The keys never leave the hardware. We believe this is far more secure.
 
 #### Fully recoverable accounts
 
