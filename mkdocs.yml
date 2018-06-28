@@ -12,9 +12,9 @@ pages:
 extra:
   sdks:
     - name: JavaScript
-      url: https://github.com/BitskiCo/bitski-js-sdk
+      url: https://github.com/BitskiCo/bitski-js
     - name: iOS
-      url: https://github.com/BitskiCo/BitskiSDK
+      url: https://github.com/BitskiCo/bitski-ios
     - name: Truffle
       url: https://github.com/BitskiCo/bitski-truffle-provider
 theme:

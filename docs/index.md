@@ -13,8 +13,8 @@ We provide you with access to the Ethereum network through our hosted nodes, and
 
 We have SDKs for easy integration with various platforms. You can find more information on each SDK below.
 
-- [JavaScript](https://github.com/BitskiCo/bitski-js-sdk) – Integrate Bitski with your web app
-- [iOS](https://github.com/BitskiCo/BitskiSDK) – Integrate Bitski with your iOS app
+- [JavaScript](https://github.com/BitskiCo/bitski-js) – Integrate Bitski with your web app
+- [iOS](https://github.com/BitskiCo/bitski-ios) – Integrate Bitski with your iOS app
 - [Truffle](https://github.com/BitskiCo/bitski-truffle-provider) – Deploy contracts using your Bitski app wallet
 
 ## FAQ

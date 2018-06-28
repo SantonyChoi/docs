@@ -26,7 +26,7 @@ A great place to start is to put our sign in button wherever you're currently as
 
 ### I already have an app that uses Metamask, can I use Bitski?
 
-The Bitski SDK is designed to be compatible with other wallets and dapp browsers, while providing a great experience for users who don't already have a wallet. Learn more about integrating our JS SDK [here](https://github.com/BitskiCo/bitski-js-sdk).
+The Bitski SDK is designed to be compatible with other wallets and dapp browsers, while providing a great experience for users who don't already have a wallet. Learn more about integrating our JS SDK [here](https://github.com/BitskiCo/bitski-js).
 
 ---
 

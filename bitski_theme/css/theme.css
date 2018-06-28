@@ -100,10 +100,22 @@
    font-size: 0.9rem;
  }
 
- pre code, code {
-   font-family: 'PressuraMono';
-   font-size: 0.9rem;
-   font-variant-ligatures: none;
+ pre code {
+  font-size: 0.9rem;
+  white-space: pre;
+  word-wrap: normal;
+  display: block;
+  padding: 12px;
+ }
+
+ code {
+  font-family: 'PressuraMono';
+  font-variant-ligatures: none;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(73, 85, 107);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 0px;
  }
 
  video {

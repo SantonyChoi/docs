@@ -20,8 +20,8 @@ For more information on all the settings, see [Client Settings](client-settings.
 
 Now that you have a configured client id, you can start using our SDKs in your app. You'll want to follow the instructions for the particular SDK you're using:
 
-- <a href="https://github.com/BitskiCo/bitski-js-sdk" target="_blank">JavaScript</a>
-- <a href="https://github.com/BitskiCo/BitskiSDK" target="_blank">iOS</a>
+- <a href="https://github.com/BitskiCo/bitski-js" target="_blank">JavaScript</a>
+- <a href="https://github.com/BitskiCo/bitski-ios" target="_blank">iOS</a>
 
 For web based apps, you'll need to be able to respond to the callback from our servers.
 

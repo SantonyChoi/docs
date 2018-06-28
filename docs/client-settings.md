@@ -2,8 +2,28 @@ You can configure your app's settings from the <a href="https://developer.bitski
 
 ## App Info
 
-This is metadata about your app that gives users more context. We will feature these details in our interface when we are presenting requests from your app or referencing your app.
+This is metadata about your app that gives users more context. While only name is required, these details should ideally be provided for the best possible user experience.
 
-## Callback URLs
+**Name**
+
+This is the name we'll use to reference your app in various parts of the Bitski interface. For example, in the list of connected apps under the user's account.
+
+**App URL**
+
+This is the URL we'll link to when referencing your app in Bitski.
+
+**Contact Email**
+
+This should be an email where we can contact you about any issues regarding your app. It is not currently exposed to users.
+
+**Privacy Policy URL**
+
+We will feature this link when asking users if they want to authorize your app.
+
+**Terms URL**
+
+We will feature this link when asking users if they want to authorize your app.
+
+## Redirect URLs
 
 These are approved URLs that clients using your *client id* can ask to be redirected to. It's important to keep this list as small as possible so malicious apps cannot pose as you. If a client asks to be redirected to a URL that is not on this list, they will receive an error.

@@ -1,19 +1,4 @@
 /*
- * Sphinx doesn't have support for section dividers like we do in
- * MkDocs, this styles the section titles in the nav
- *
- * https://github.com/mkdocs/mkdocs/issues/175
- */
-.wy-menu-vertical span {
-    line-height: 18px;
-    padding: 0.4045em 1.618em;
-    display: block;
-    position: relative;
-    font-size: 90%;
-    color: #838383;
-}
-
-/*
  * Long navigations run off the bottom of the screen as the nav
  * area doesn't scroll.
  *
@@ -47,35 +32,6 @@
  */
 .wy-menu-vertical ul {
   margin-bottom: 2em;
-}
-
-/*
- * Wrap inline code samples otherwise they shoot of the side and
- * can't be read at all.
- *
- * https://github.com/mkdocs/mkdocs/issues/313
- * https://github.com/mkdocs/mkdocs/issues/233
- * https://github.com/mkdocs/mkdocs/issues/834
- */
-code {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    padding: 2px 5px;
-}
-
-/**
- * Make code blocks display as blocks and give them the appropriate
- * font size and padding.
- *
- * https://github.com/mkdocs/mkdocs/issues/855
- * https://github.com/mkdocs/mkdocs/issues/834
- * https://github.com/mkdocs/mkdocs/issues/233
- */
-pre code {
-  white-space: pre;
-  word-wrap: normal;
-  display: block;
-  padding: 12px;
 }
 
 /*
@@ -116,43 +72,6 @@ pre .cs, pre .c {
   display: block;
   padding: 0.5em;
   color: #333;
-}
-
-
-/*
- * Additions specific to the search functionality provided by MkDocs
- */
-
-.search-results article {
-    margin-top: 23px;
-    border-top: 1px solid #E1E4E5;
-    padding-top: 24px;
-}
-
-.search-results article:first-child {
-    border-top: none;
-}
-
-form .search-query {
-    width: 100%;
-    border-radius: 50px;
-    padding: 6px 12px;  /* csslint allow: box-model */
-    border-color: #D1D4D5;
-}
-
-.wy-menu-vertical li ul {
-    display: inherit;
-}
-
-.wy-menu-vertical li ul.subnav ul.subnav{
-    padding-left: 1em;
-}
-
-.wy-menu-vertical .subnav li.current > a {
-    padding-left: 2.42em;
-}
-.wy-menu-vertical .subnav li.current > ul li a {
-    padding-left: 3.23em;
 }
 
 /*

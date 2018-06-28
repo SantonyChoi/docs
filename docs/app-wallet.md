@@ -18,7 +18,7 @@ We have a simple Truffle plugin that makes deploying contracts with your App Wal
 
 You can also use standard Web3 apis on your backend to perform anything you want using your wallet. Here's how it works:
 
-First, you'll use your client id and secret to request an access token using OAuth Client Credentials. Most platforms have a library that can handle this step for you. Your token has a relatively short lifespan, so you'll probably want to perform this step before every request.
+First, you'll use your client id and secret to request an access token using OAuth Client Credentials. Most platforms have a library that can handle this step for you. Your token has a relatively short lifespan, so you'll probably want to perform this step before every request. You must request the scope `eth_sign`.
 
 ```text
 POST /oauth2/token HTTP/2
@@ -27,6 +27,7 @@ Host: https://account.bitski.com
 grant_type=client_credentials
 &client_id=YOUR CLIENT ID
 &client_secret=YOUR CLIENT SECRET
+&scope=eth_sign
 ```
 
 ```text
@@ -39,7 +40,7 @@ Pragma: no-cache
   "access_token": "YOUR ACCESS TOKEN",
   "token_type": "bearer",
   "expires_in": 3600,
-  "scope": ""
+  "scope": "eth_sign"
 }
 ```
 
