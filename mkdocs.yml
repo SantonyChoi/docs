@@ -12,7 +12,7 @@ pages:
 extra:
   sdks:
     - name: JavaScript
-      url: https://github.com/BitskiCo/bitski-js
+      url: https://bitskico.github.io/bitski-js/
     - name: iOS
       url: https://bitskico.github.io/bitski-ios/
     - name: Truffle
