@@ -2,6 +2,8 @@ In addition to managing wallets for users of your dapp, Bitski can also manage a
 
 On top of that, you can use your app wallet to securely perform any transactions you want from your backend using OAuth Client Credentials.
 
+Note: App Wallet currently only supports mainnet and Rinkeby networks.
+
 ## Getting your credentials
 
 While we are in private beta this is a manual process. You can request an app wallet here. Once we create one for you, you can visit the [Developer Portal](https://developer.bitski.com) to see your credentials. Make sure to keep these keys a secret, because we will sign any transaction that is submitted using them.
@@ -47,7 +49,7 @@ Pragma: no-cache
 Once you have an access token, you must add that to the Authorization header for your API request. We support all the standard Web3 JSON-RPC methods, so you can also use any Web3 client to send these transactions.
 
 ```text
-POST /web3/kovan HTTP/2
+POST /web3/mainnet HTTP/2
 Host: https://api.bitski.com
 Content-Type: application/json
 Authorization: Bearer YOUR ACCESS TOKEN
@@ -89,5 +91,5 @@ For a list of all the supported methods, see [Ethereum's JSON-RPC spec](https://
 Name | URL
 -----|-----
 Ethereum | https://api.bitski.com/v1/web3/mainnet
-Kovan | https://api.bitski.com/v1/web3/kovan
+Kovan | https://api.bitski.com/v1/web3/kovan (not currently supported)
 Rinkeby | https://api.bitski.com/v1/web3/rinkeby

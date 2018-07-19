@@ -6,7 +6,11 @@ The first step is to make sure that you have a Bitski account. If you haven't do
 
 All apps that use the Bitski need to have their own client id. We use this id to keep track of permissions a user has granted you.
 
-We're currently in private beta, so to get a client ID you must request access on our <a href="https://developer.bitski.com" target="_blank">developer portal</a>. We will review your request and notify you by email once you are approved.
+To create one, visit our <a href="https://developer.bitski.com" target="_blank">developer portal</a>, and click **New App**.
+
+Once your app is created it will be in a _Pending_ state. This means you can customize your app's settings, but you won't be able to actually use it until your app has been approved.
+
+During our beta we are manually reviewing all new apps, and approving them. When your app is approved we will contact you at the email listed on your account. If you have a special request or time sensitive issue, you can [contact us](mailto:support@bitski.com) and we will review your request.
 
 ## Configuring your client settings
 
@@ -18,7 +22,11 @@ For more information on all the settings, see [Client Settings](client-settings.
 
 ## Integrate with your app
 
-Now that you have a configured client id, you can start using our SDKs in your app. You'll want to follow the instructions for the particular SDK you're using:
+Now that you have a configured client id, you can start using our SDKs in your app.
+
+A great place to start for new web-based apps is our <a href="https://github.com/BitskiCo/quickstart" target="_blank">Quickstart Truffle Box</a>.
+
+You can find more details on integrating with your app by reviewing the instructions for the particular SDK you're using:
 
 - <a href="https://github.com/BitskiCo/bitski-js" target="_blank">JavaScript</a>
 - <a href="https://github.com/BitskiCo/bitski-ios" target="_blank">iOS</a>

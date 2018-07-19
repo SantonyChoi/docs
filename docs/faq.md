@@ -2,7 +2,7 @@ Here are some answers to the questions we get asked most often.
 
 ### What networks do you support?
 
-Bitski currently supports only the Kovan and Rinkeby test networks. However, we will have support for the main Ethereum network soon.
+Bitski currently supports mainnet (beta), and the Kovan and Rinkeby test networks.
 
 ---
 

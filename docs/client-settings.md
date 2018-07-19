@@ -27,3 +27,9 @@ We will feature this link when asking users if they want to authorize your app.
 ## Redirect URLs
 
 These are approved URLs that clients using your *client id* can ask to be redirected to. It's important to keep this list as small as possible so malicious apps cannot pose as you. If a client asks to be redirected to a URL that is not on this list, they will receive an error.
+
+## Approved Scopes
+
+These are the scopes that we have approved you to request access to in your app. For web apps, generally this is just openid. Native apps need openid and offline scopes.
+
+By default when you create an app you will not have any approved scopes. While we're in beta we manually review every app that is created and grant scopes to apps that we approve.

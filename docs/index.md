@@ -1,4 +1,4 @@
-Bitski lets you build *user-friendly* and *cross-platform* Ethereum apps. Using Bitski, you can build a decentralized app or game that feels just as easy to use as a standard app.
+Bitski (currently in beta) lets you build *user-friendly* and *cross-platform* Ethereum apps. Using Bitski, you can build a decentralized app or game that feels just as easy to use as a standard app.
 
 We provide you with access to the Ethereum network through our hosted nodes, and provide access to the user's wallet using OAuth. [Learn More](overview.md).
 
@@ -6,7 +6,7 @@ We provide you with access to the Ethereum network through our hosted nodes, and
 
 - Need an account? <a href="https://bitski.com/signup" target="_blank">Sign up here</a>.
 - Learn more how it works in our [overview](overview.md).
-- Ready to start building? Check out [getting started](getting-started.md).
+- Ready to start building? Check out [getting started](getting-started.md) and our [quickstart repo](https://github.com/BitskiCo/quickstart).
 - Got questions? Chat with us in our <a href="https://discord.gg/5f6pAFN" target="_blank">Discord</a>.
 
 ## Platforms
