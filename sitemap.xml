@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/overview/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/getting-started/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/oauth/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/client-settings/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/transactions/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/app-wallet/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/examples/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/faq/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-07-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

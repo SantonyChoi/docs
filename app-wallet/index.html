@@ -172,9 +172,11 @@
 <p>On top of that, you can use your app wallet to securely perform any transactions you want from your backend using OAuth Client Credentials.</p>
 <p>Note: App Wallet currently only supports mainnet and Rinkeby networks.</p>
 <h2 id="getting-your-credentials">Getting your credentials</h2>
-<p>While we are in private beta this is a manual process. You can request an app wallet here. Once we create one for you, you can visit the <a href="https://developer.bitski.com">Developer Portal</a> to see your credentials. Make sure to keep these keys a secret, because we will sign any transaction that is submitted using them.</p>
+<p>To create an app wallet, visit our <a href="https://developer.bitski.com">Developer Portal</a> and click <em>New App</em>. In the app creation form, select <strong>Backend / App Wallet</strong> under App Type.</p>
+<p>After you create your app, your <em>client id</em> and <em>client secret</em> will be displayed. Make sure to download the credentials or copy these down somewhere, as the secret cannot be retrieved later.</p>
 <h2 id="funding-your-dev-wallet">Funding your dev wallet</h2>
-<p>This is currently a manual process as well. We recommend buying ETH from a third-party such as <a href="https://coinbase.com" target="_blank">Coinbase</a> and sending it to your app wallet's address. You can find your address in the <a href="https://developer.bitski.com">Developer Portal</a>.</p>
+<p>This is currently a manual process. We recommend buying ETH from a third-party such as <a href="https://coinbase.com" target="_blank">Coinbase</a> and sending it to your app wallet's address.</p>
+<p>We currently do not display your app wallet's address in the developer portal, so for now to get your address you'll need to get an auth token, and make a JSON-RPC call for <code>eth_accounts</code>. We are working on making this process much simpler.</p>
 <h2 id="deploying-contracts-with-truffle">Deploying Contracts with Truffle</h2>
 <p>We have a simple Truffle plugin that makes deploying contracts with your App Wallet easy. Read more about it <a href="https://github.com/BitskiCo/bitski-truffle-provider">here</a>.</p>
 <h2 id="submitting-transactions">Submitting transactions</h2>
