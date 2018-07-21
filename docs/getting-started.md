@@ -8,10 +8,6 @@ All apps that use the Bitski need to have their own client id. We use this id to
 
 To create one, visit our <a href="https://developer.bitski.com" target="_blank">developer portal</a>, and click **New App**.
 
-Once your app is created it will be in a _Pending_ state. This means you can customize your app's settings, but you won't be able to actually use it until your app has been approved.
-
-During our beta we are manually reviewing all new apps, and approving them. When your app is approved we will contact you at the email listed on your account. If you have a special request or time sensitive issue, you can [contact us](mailto:support@bitski.com) and we will review your request.
-
 ## Configuring your client settings
 
 Once you have a client id, you'll need to configure the settings for your app. You can do this from the <a href="https://developer.bitski.com" target="_blank">developer portal</a>.

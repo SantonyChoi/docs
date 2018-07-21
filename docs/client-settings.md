@@ -31,5 +31,3 @@ These are approved URLs that clients using your *client id* can ask to be redire
 ## Approved Scopes
 
 These are the scopes that we have approved you to request access to in your app. For web apps, generally this is just openid. Native apps need openid and offline scopes.
-
-By default when you create an app you will not have any approved scopes. While we're in beta we manually review every app that is created and grant scopes to apps that we approve.

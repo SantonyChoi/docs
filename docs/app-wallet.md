@@ -6,11 +6,15 @@ Note: App Wallet currently only supports mainnet and Rinkeby networks.
 
 ## Getting your credentials
 
-While we are in private beta this is a manual process. You can request an app wallet here. Once we create one for you, you can visit the [Developer Portal](https://developer.bitski.com) to see your credentials. Make sure to keep these keys a secret, because we will sign any transaction that is submitted using them.
+To create an app wallet, visit our [Developer Portal](https://developer.bitski.com) and click *New App*. In the app creation form, select **Backend / App Wallet** under App Type.
+
+After you create your app, your *client id* and *client secret* will be displayed. Make sure to download the credentials or copy these down somewhere, as the secret cannot be retrieved later.
 
 ## Funding your dev wallet
 
-This is currently a manual process as well. We recommend buying ETH from a third-party such as <a href="https://coinbase.com" target="_blank">Coinbase</a> and sending it to your app wallet's address. You can find your address in the [Developer Portal](https://developer.bitski.com).
+This is currently a manual process. We recommend buying ETH from a third-party such as <a href="https://coinbase.com" target="_blank">Coinbase</a> and sending it to your app wallet's address.
+
+We currently do not display your app wallet's address in the developer portal, so for now to get your address you'll need to get an auth token, and make a JSON-RPC call for `eth_accounts`. We are working on making this process much simpler.
 
 ## Deploying Contracts with Truffle
 
