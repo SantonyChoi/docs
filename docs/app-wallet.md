@@ -1,3 +1,5 @@
+_Note: This feature is currently in beta._
+
 In addition to managing wallets for users of your dapp, Bitski can also manage a wallet for your dapp itself. This makes it much easier to manage funding, deploying, and migrating your dapp's contracts.
 
 On top of that, you can use your app wallet to securely perform any transactions you want from your backend using OAuth Client Credentials.
@@ -10,11 +12,13 @@ To create an app wallet, visit our [Developer Portal](https://developer.bitski.c
 
 After you create your app, your *client id* and *client secret* will be displayed. Make sure to download the credentials or copy these down somewhere, as the secret cannot be retrieved later.
 
+## Getting your wallet address
+
+We're working on a UI for managing this, but for now the best way to get your address is through web3 using our <a href="https://github.com/BitskiCo/bitski-truffle-provider">truffle provider</a>. You can try it out with our <a href="https://runkit.com/pixelmatrix/get-bitski-app-wallet-address" target="_blank">RunKit playground</a>.
+
 ## Funding your dev wallet
 
 This is currently a manual process. We recommend buying ETH from a third-party such as <a href="https://coinbase.com" target="_blank">Coinbase</a> and sending it to your app wallet's address.
-
-We currently do not display your app wallet's address in the developer portal, so for now to get your address you'll need to get an auth token, and make a JSON-RPC call for `eth_accounts`. We are working on making this process much simpler.
 
 ## Deploying Contracts with Truffle
 
