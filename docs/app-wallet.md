@@ -14,7 +14,9 @@ After you create your app, your *client id* and *client secret* will be displaye
 
 ## Getting your wallet address
 
-We're working on a UI for managing this, but for now the best way to get your address is through web3 using our <a href="https://github.com/BitskiCo/bitski-truffle-provider">truffle provider</a>. You can try it out with our <a href="https://runkit.com/pixelmatrix/get-bitski-app-wallet-address" target="_blank">RunKit playground</a>.
+We're working on a UI for managing this, but for now the best way to get your address is through web3 using our <a href="https://github.com/BitskiCo/bitski-truffle-provider">truffle provider</a>. Our <a href="https;//github.com/BitskiCo/quickstart" target="blank">quickstart project</a> is already configured to easily get your address with a single command.
+
+You can also try it out with our <a href="https://runkit.com/pixelmatrix/get-bitski-app-wallet-address" target="_blank">RunKit playground</a>.
 
 ## Funding your dev wallet
 
