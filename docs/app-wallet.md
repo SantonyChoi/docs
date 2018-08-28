@@ -101,5 +101,5 @@ For a list of all the supported methods, see [Ethereum's JSON-RPC spec](https://
 Name | URL
 -----|-----
 Ethereum | https://api.bitski.com/v1/web3/mainnet
-Kovan | https://api.bitski.com/v1/web3/kovan (not currently supported)
+Kovan | https://api.bitski.com/v1/web3/kovan
 Rinkeby | https://api.bitski.com/v1/web3/rinkeby
