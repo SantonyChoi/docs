@@ -4,8 +4,6 @@ In addition to managing wallets for users of your dapp, Bitski can also manage a
 
 On top of that, you can use your app wallet to securely perform any transactions you want from your backend using OAuth Client Credentials.
 
-Note: App Wallet currently only supports mainnet and Rinkeby networks.
-
 ## Getting your credentials
 
 To create an app wallet, visit our [Developer Portal](https://developer.bitski.com) and click *New App*. In the app creation form, select **Backend / App Wallet** under App Type.
