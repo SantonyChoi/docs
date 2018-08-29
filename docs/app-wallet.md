@@ -56,7 +56,7 @@ Pragma: no-cache
 }
 ```
 
-Once you have an access token, you must add that to the Authorization header for your API request. We support all the standard Web3 JSON-RPC methods, so you can also use any Web3 client to send these transactions.
+Once you have an access toooken, you must add that to the Authorization header for your API request. We support all the standard Web3 JSON-RPC methods, so you can also use any Web3 client to send these transactions.
 
 ```text
 POST /web3/mainnet HTTP/2
