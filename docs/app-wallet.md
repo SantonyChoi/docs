@@ -98,6 +98,7 @@ For a list of all the supported methods, see [Ethereum's JSON-RPC spec](https://
 
 Name | URL
 -----|-----
-Ethereum | https://api.bitski.com/v1/web3/mainnet
-Kovan | https://api.bitski.com/v1/web3/kovan
-Rinkeby | https://api.bitski.com/v1/web3/rinkeby
+ethereum | https://api.bitski.com/v1/web3/mainnet
+kovan | https://api.bitski.com/v1/web3/kovan
+rinkeby | https://api.bitski.com/v1/web3/rinkeby
+springrole | https://api.bitski.com/v1/web3/springrole
