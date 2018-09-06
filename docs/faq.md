@@ -2,7 +2,7 @@ Here are some answers to the questions we get asked most often.
 
 ### What networks do you support?
 
-Bitski currently supports mainnet (beta), and the Kovan and Rinkeby test networks.
+Bitski currently supports mainnet (beta), SpringRole network, and the Kovan and Rinkeby test networks. To request support for your Ethereum compatible network, please <a href="mailto:support@bitski.com">contact us</a>.
 
 ---
 
