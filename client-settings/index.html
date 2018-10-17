@@ -178,8 +178,9 @@
 <p>We will feature this link when asking users if they want to authorize your app.</p>
 <h2 id="redirect-urls">Redirect URLs</h2>
 <p>These are approved URLs that clients using your <em>client id</em> can ask to be redirected to. It's important to keep this list as small as possible so malicious apps cannot pose as you. If a client asks to be redirected to a URL that is not on this list, they will receive an error.</p>
+<p>Note: These redirect urls must match what your client enters exactly. It is case sensitive and every character counts. Common mistakes are entering http instead of https, or entering just the domain and not the actual path (http://localhost:3000 instead of http://localhost:3000/callback).</p>
 <h2 id="approved-scopes">Approved Scopes</h2>
-<p>These are the scopes that we have approved you to request access to in your app. For web apps, generally this is just openid. Native apps need openid and offline scopes.</p>
+<p>These are the scopes that we have approved you to request access to in your app. For web apps, generally this is just openid. Native apps need openid and offline scopes. If you would like access to a scope and it isn't on this list, please <a href="mailto:hello@bitski.com">contact us</a>.</p>
               
             </div>
           </div>

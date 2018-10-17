@@ -98,15 +98,17 @@
         <!--
         <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#getting-your-credentials">Getting your credentials</a></li>
+    <li class="toctree-l2"><a href="#creating-an-app-wallet">Creating an App Wallet</a></li>
 
-    <li class="toctree-l2"><a href="#getting-your-wallet-address">Getting your wallet address</a></li>
+    <li class="toctree-l2"><a href="#creating-your-credentials">Creating your credentials</a></li>
 
-    <li class="toctree-l2"><a href="#funding-your-dev-wallet">Funding your dev wallet</a></li>
+    <li class="toctree-l2"><a href="#funding-your-app-wallet">Funding your app wallet</a></li>
+
+    <li class="toctree-l2"><a href="#backend-sdks">Backend SDKs</a></li>
 
     <li class="toctree-l2"><a href="#deploying-contracts-with-truffle">Deploying Contracts with Truffle</a></li>
 
-    <li class="toctree-l2"><a href="#submitting-transactions">Submitting transactions</a></li>
+    <li class="toctree-l2"><a href="#using-our-api">Using our API</a></li>
 
     <li class="toctree-l2"><a href="#json-rpc-endpoints">JSON-RPC Endpoints</a></li>
 
@@ -169,21 +171,29 @@
                 
                   <h1>App Wallets</h1>
                 
-                <p>In addition to managing wallets for users of your dapp, Bitski can also manage a wallet for your dapp itself. This makes it much easier to manage funding, deploying, and migrating your dapp's contracts.</p>
-<p>On top of that, you can use your app wallet to securely perform any transactions you want from your backend using OAuth Client Credentials.</p>
-<h2 id="getting-your-credentials">Getting your credentials</h2>
-<p>To create an app wallet, visit our <a href="https://developer.bitski.com">Developer Portal</a> and click <em>New App</em>. In the app creation form, select <strong>Backend / App Wallet</strong> under App Type.</p>
-<p>After you create your app, your <em>client id</em> and <em>client secret</em> will be displayed. Make sure to download the credentials or copy these down somewhere, as the secret cannot be retrieved later.</p>
-<h2 id="getting-your-wallet-address">Getting your wallet address</h2>
-<p>We're working on a UI for managing this, but for now the best way to get your address is through web3 using our <a href="https://github.com/BitskiCo/bitski-truffle-provider">truffle provider</a>. Our <a href="https;//github.com/BitskiCo/quickstart" target="blank">quickstart project</a> is already configured to easily get your address with a single command.</p>
-<p>You can also try it out with our <a href="https://runkit.com/pixelmatrix/get-bitski-app-wallet-address" target="_blank">RunKit playground</a>.</p>
-<h2 id="funding-your-dev-wallet">Funding your dev wallet</h2>
-<p>This is currently a manual process. We recommend buying ETH from a third-party such as <a href="https://coinbase.com" target="_blank">Coinbase</a> and sending it to your app wallet's address.</p>
+                <p>In addition to managing wallets for users of your dapp, Bitski can also manage a wallet for your dapp itself. This is a very powerful tool, as it allows you to perform transactions on the server instead of the client, and in some cases remove the need for your users to pay gas. Additionally, you can use App Wallet in Truffle for deploying your smart contracts.</p>
+<h2 id="creating-an-app-wallet">Creating an App Wallet</h2>
+<p>To create an app wallet, first you will need an app. Start by visiting our <a href="https://developer.bitski.com">Developer Portal</a>, then click <em>New App</em> and enter your details.</p>
+<p>After you create your app, you can create your <em>App Wallet</em>. Navigate to your app details in the developer portal. Then, select the <strong>Wallets</strong> tab. Click <em>New Wallet</em> to generate a wallet. You will then see your app wallet's address and current balance across our supported networks.</p>
+<h2 id="creating-your-credentials">Creating your credentials</h2>
+<p>In order to actually use your app wallet in your code, you will need to create credentials. These credentials are exchanged with our OAuth server for an access token, which is then used to access your app wallet(s).</p>
+<p>To create a credential, first visit your app details page in the dev portal. Then, select the <strong>Backend Credentials</strong> tab, and click <em>New Credential</em>.</p>
+<p>Your <em>credential id</em> and <em>client secret</em> will be displayed in a modal. Make sure to download the credentials or copy these down somewhere, as the secret cannot be retrieved later. If you lose the secret, you can regenerate it on this screen as well.</p>
+<p>Currently, each credential can access all of the app wallets under your app. We recommend creating one credential per app or service that uses it. That way you can remove access as needed with as little interruption as possible.</p>
+<p>Important: Since these credentials allow you to send transactions from your app wallet without any prompt, you should treat them as a username and password, and be careful not to share them with any untrusted parties.</p>
+<h2 id="funding-your-app-wallet">Funding your app wallet</h2>
+<p>For now, this is a manual process. We recommend buying ETH from a third-party such as <a href="https://coinbase.com" target="_blank">Coinbase</a> and sending it to your app wallet's address.</p>
+<h2 id="backend-sdks">Backend SDKs</h2>
+<p>We currently have SDKs for both Node.js and Python applications. These SDKs take your credentials and give you a web3 provider that is ready to use. If you would like to use App Wallet on another platform, please <a href="mailto:hello@bitski.com">contact us</a> and we will consider creating an SDK for it.</p>
+<ul>
+<li><a href="https://github.com/BitskiCo/bitski-node">Node SDK</a></li>
+<li><a href="https://github.com/BitskiCo/bitski-py">Python SDK</a></li>
+</ul>
 <h2 id="deploying-contracts-with-truffle">Deploying Contracts with Truffle</h2>
-<p>We have a simple Truffle plugin that makes deploying contracts with your App Wallet easy. Read more about it <a href="https://github.com/BitskiCo/bitski-truffle-provider">here</a>.</p>
-<h2 id="submitting-transactions">Submitting transactions</h2>
-<p>You can also use standard Web3 apis on your backend to perform anything you want using your wallet. Here's how it works:</p>
-<p>First, you'll use your client id and secret to request an access token using OAuth Client Credentials. Most platforms have a library that can handle this step for you. Your token has a relatively short lifespan, so you'll probably want to perform this step before every request. You must request the scope <code>eth_sign</code>.</p>
+<p>We also have a simple Truffle plugin that makes deploying contracts with your App Wallet easy. Read more about it <a href="https://github.com/BitskiCo/bitski-truffle-provider">here</a>.</p>
+<h2 id="using-our-api">Using our API</h2>
+<p>You can use our apis directly from your backend to perform anything you want using your wallet. Here's how it works:</p>
+<p>First, you'll use your credential id and secret to request an access token using OAuth. Most platforms have a library that can handle this step for you. Your token has a relatively short lifespan, so you may want to perform this step before every request. You must request the scope <code>eth_sign</code>.</p>
 <pre><code class="text">POST /oauth2/token HTTP/2
 Host: https://account.bitski.com
 
@@ -206,7 +216,7 @@ Pragma: no-cache
 }
 </code></pre>
 
-<p>Once you have an access token, you must add that to the Authorization header for your API request. We support all the standard Web3 JSON-RPC methods, so you can also use any Web3 client to send these transactions.</p>
+<p>Once you have an access token, you must add that to the Authorization header for all your Web3 API requests. We support all the standard Web3 JSON-RPC methods, so you can also use any Web3 client to send these transactions.</p>
 <pre><code class="text">POST /web3/mainnet HTTP/2
 Host: https://api.bitski.com
 Content-Type: application/json

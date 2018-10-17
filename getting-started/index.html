@@ -80,7 +80,7 @@
             
     <li class="toctree-l2"><a href="#signing-up">Signing up</a></li>
 
-    <li class="toctree-l2"><a href="#getting-a-client-id">Getting a client ID</a></li>
+    <li class="toctree-l2"><a href="#creating-an-app">Creating an app</a></li>
 
     <li class="toctree-l2"><a href="#configuring-your-client-settings">Configuring your client settings</a></li>
 
@@ -167,15 +167,16 @@
                 
                 <h2 id="signing-up">Signing up</h2>
 <p>The first step is to make sure that you have a Bitski account. If you haven't done so already, <a href="https://bitski.com/sign-up" target="_blank">sign up for an account</a>. Your Bitski account is both your personal wallet, and your developer account.</p>
-<h2 id="getting-a-client-id">Getting a client ID</h2>
-<p>All apps that use the Bitski need to have their own client id. We use this id to keep track of permissions a user has granted you.</p>
-<p>To create one, visit our <a href="https://developer.bitski.com" target="_blank">developer portal</a>, and click <strong>New App</strong>.</p>
+<h2 id="creating-an-app">Creating an app</h2>
+<p>All apps that use the Bitski need to be registered in our Developer Portal. We use this to keep track of permissions a user has granted you.</p>
+<p>To register, visit our <a href="https://developer.bitski.com" target="_blank">developer portal</a>, and click <strong>New App</strong>.</p>
+<p>Once registered, you can select your new app from the list, and you should now be able to see your client id.</p>
 <h2 id="configuring-your-client-settings">Configuring your client settings</h2>
-<p>Once you have a client id, you'll need to configure the settings for your app. You can do this from the <a href="https://developer.bitski.com" target="_blank">developer portal</a>.</p>
-<p>The most important setting here is the redirect url(s). We use this to ensure that only the domains you approve will be able to use your client id.</p>
+<p>Once you have created your app, you'll need to configure the OAuth settings for your app. You can do this from the OAuth tab under your app details page in the <a href="https://developer.bitski.com" target="_blank">developer portal</a>.</p>
+<p>The most important setting here is the redirect url(s). We use this to ensure that only the domains you approve will be able to get access tokens for your client id.</p>
 <p>For more information on all the settings, see <a href="../client-settings/">Client Settings</a>.</p>
 <h2 id="integrate-with-your-app">Integrate with your app</h2>
-<p>Now that you have a configured client id, you can start using our SDKs in your app.</p>
+<p>Now that you have a configured your app on Bitski, you can start using our SDKs in your app.</p>
 <p>A great place to start for new web-based apps is our <a href="https://github.com/BitskiCo/quickstart" target="_blank">Quickstart Truffle Box</a>.</p>
 <p>You can find more details on integrating with your app by reviewing the instructions for the particular SDK you're using:</p>
 <ul>
