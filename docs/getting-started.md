@@ -2,23 +2,25 @@
 
 The first step is to make sure that you have a Bitski account. If you haven't done so already, <a href="https://bitski.com/sign-up" target="_blank">sign up for an account</a>. Your Bitski account is both your personal wallet, and your developer account.
 
-## Getting a client ID
+## Creating an app
 
-All apps that use the Bitski need to have their own client id. We use this id to keep track of permissions a user has granted you.
+All apps that use the Bitski need to be registered in our Developer Portal. We use this to keep track of permissions a user has granted you.
 
-To create one, visit our <a href="https://developer.bitski.com" target="_blank">developer portal</a>, and click **New App**.
+To register, visit our <a href="https://developer.bitski.com" target="_blank">developer portal</a>, and click **New App**.
+
+Once registered, you can select your new app from the list, and you should now be able to see your client id.
 
 ## Configuring your client settings
 
-Once you have a client id, you'll need to configure the settings for your app. You can do this from the <a href="https://developer.bitski.com" target="_blank">developer portal</a>.
+Once you have created your app, you'll need to configure the OAuth settings for your app. You can do this from the OAuth tab under your app details page in the <a href="https://developer.bitski.com" target="_blank">developer portal</a>.
 
-The most important setting here is the redirect url(s). We use this to ensure that only the domains you approve will be able to use your client id.
+The most important setting here is the redirect url(s). We use this to ensure that only the domains you approve will be able to get access tokens for your client id.
 
 For more information on all the settings, see [Client Settings](client-settings.md).
 
 ## Integrate with your app
 
-Now that you have a configured client id, you can start using our SDKs in your app.
+Now that you have a configured your app on Bitski, you can start using our SDKs in your app.
 
 A great place to start for new web-based apps is our <a href="https://github.com/BitskiCo/quickstart" target="_blank">Quickstart Truffle Box</a>.
 
