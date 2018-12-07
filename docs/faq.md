@@ -18,7 +18,7 @@ Secure key storage is very challenging, and a siloed approach will be inconvenie
 
 ---
 
-### How should I integrate Bitski in my dapp?
+### How should I integrate Bitski in my app?
 
 A great place to start is to put our sign in button wherever you're currently asking people to install Metamask.
 
