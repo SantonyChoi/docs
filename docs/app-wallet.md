@@ -1,4 +1,4 @@
-In addition to managing wallets for users of your dapp, Bitski can also manage a wallet for your dapp itself. This is a very powerful tool, as it allows you to perform transactions on the server instead of the client, and in some cases remove the need for your users to pay gas. Additionally, you can use App Wallet in Truffle for deploying your smart contracts.
+In addition to managing wallets for users of your app, Bitski can also manage a wallet for your app itself. This is a very powerful tool, as it allows you to perform programmatic transactions on the server instead of the client, and in some cases remove the need for your users to pay gas. Additionally, you can use App Wallet in Truffle for deploying your smart contracts.
 
 ## Creating an App Wallet
 
