@@ -1,6 +1,17 @@
 These examples are a great way to quickly dive in and see how you can integrate Bitski into an app on the platforms we support. Both of these examples use the same contract and assets to demonstrate how you can use Bitski to build cross-platform apps.
 
-## Web based app
+## Buying NFTs with credit cards with App Wallet
+
+<video autoplay loop muted playsinline preload style="width: 400px">
+  <source src="../public/stripe-demo.mp4" type="video/mp4">
+  <source src="../public/stripe-demo.webm" type="video/webm">
+</video>
+
+<a href="https://stripe-demo.bitski.com" target="_blank" class="btn">Visit our demo here</a> <a href="https://github.com/BitskiCo/example-stripe-nft" target="_blank" class="btn">View the code</a>
+
+---
+
+## Simple web app
 
 ![Screenshot](public/web-dapp.png)
 
