@@ -20,3 +20,6 @@ We have SDKs for easy integration with various platforms. You can find more info
 ## FAQ
 
 We've compiled a list of common questions [here](faq.md).
+
+## Report Vulnerabilities
+Bitski provides a “bug bounty” to engage with the security researchers in the community. If you have found a vulnerability in our product or service, please [submit a vulnerability report](https://www.bitski.com/bounty) to the Bitski security team.
