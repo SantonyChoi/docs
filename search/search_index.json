@@ -202,13 +202,18 @@
         }, 
         {
             "location": "/examples/", 
-            "text": "These examples are a great way to quickly dive in and see how you can integrate Bitski into an app on the platforms we support. Both of these examples use the same contract and assets to demonstrate how you can use Bitski to build cross-platform apps.\n\n\nWeb based app\n\n\n\n\nVisit our demo here\n \nView the code\n\n\n\n\niOS app\n\n\n\n  \n\n  \n\n\n\n\n\nOur demo app is not available on the App Store yet, but you can still easily run it yourself from Xcode.\n\n\nView the code", 
+            "text": "These examples are a great way to quickly dive in and see how you can integrate Bitski into an app on the platforms we support. Both of these examples use the same contract and assets to demonstrate how you can use Bitski to build cross-platform apps.\n\n\nBuying NFTs with credit cards with App Wallet\n\n\n\n  \n\n  \n\n\n\n\n\nVisit our demo here\n \nView the code\n\n\n\n\nSimple web app\n\n\n\n\nVisit our demo here\n \nView the code\n\n\n\n\niOS app\n\n\n\n  \n\n  \n\n\n\n\n\nOur demo app is not available on the App Store yet, but you can still easily run it yourself from Xcode.\n\n\nView the code", 
             "title": "Examples"
         }, 
         {
-            "location": "/examples/#web-based-app", 
+            "location": "/examples/#buying-nfts-with-credit-cards-with-app-wallet", 
             "text": "Visit our demo here   View the code", 
-            "title": "Web based app"
+            "title": "Buying NFTs with credit cards with App Wallet"
+        }, 
+        {
+            "location": "/examples/#simple-web-app", 
+            "text": "Visit our demo here   View the code", 
+            "title": "Simple web app"
         }, 
         {
             "location": "/examples/#ios-app", 
