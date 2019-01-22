@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Bitski (currently in beta) lets you build \nuser-friendly\n and \ncross-platform\n Ethereum apps. Using Bitski, you can build a decentralized app or game that feels just as easy to use as a standard app.\n\n\nWe provide you with access to the Ethereum network through our hosted nodes, and provide access to the user's wallet using OAuth. \nLearn More\n.\n\n\nShortcuts\n\n\n\n\nNeed an account? \nSign up here\n.\n\n\nLearn more how it works in our \noverview\n.\n\n\nReady to start building? Check out \ngetting started\n and our \nquickstart repo\n.\n\n\nGot questions? Chat with us in our \nDiscord\n.\n\n\n\n\nPlatforms\n\n\nWe have SDKs for easy integration with various platforms. You can find more information on each SDK below.\n\n\n\n\nJavaScript\n \u2013\u00a0Integrate Bitski with your web app\n\n\niOS\n \u2013 Integrate Bitski with your iOS app\n\n\nTruffle\n \u2013 Deploy contracts using your Bitski app wallet\n\n\n\n\nFAQ\n\n\nWe've compiled a list of common questions \nhere\n.", 
+            "text": "Bitski (currently in beta) lets you build \nuser-friendly\n and \ncross-platform\n Ethereum apps. Using Bitski, you can build a decentralized app or game that feels just as easy to use as a standard app.\n\n\nWe provide you with access to the Ethereum network through our hosted nodes, and provide access to the user's wallet using OAuth. \nLearn More\n.\n\n\nShortcuts\n\n\n\n\nNeed an account? \nSign up here\n.\n\n\nLearn more how it works in our \noverview\n.\n\n\nReady to start building? Check out \ngetting started\n and our \nquickstart repo\n.\n\n\nGot questions? Chat with us in our \nDiscord\n.\n\n\n\n\nPlatforms\n\n\nWe have SDKs for easy integration with various platforms. You can find more information on each SDK below.\n\n\n\n\nJavaScript\n \u2013\u00a0Integrate Bitski with your web app\n\n\niOS\n \u2013 Integrate Bitski with your iOS app\n\n\nTruffle\n \u2013 Deploy contracts using your Bitski app wallet\n\n\n\n\nFAQ\n\n\nWe've compiled a list of common questions \nhere\n.\n\n\nReport Vulnerabilities\n\n\nBitski provides a \u201cbug bounty\u201d to engage with the security researchers in the community. If you have found a vulnerability in our product or service, please \nsubmit a vulnerability report\n to the Bitski security team.", 
             "title": "Home"
         }, 
         {
@@ -19,6 +19,11 @@
             "location": "/#faq", 
             "text": "We've compiled a list of common questions  here .", 
             "title": "FAQ"
+        }, 
+        {
+            "location": "/#report-vulnerabilities", 
+            "text": "Bitski provides a \u201cbug bounty\u201d to engage with the security researchers in the community. If you have found a vulnerability in our product or service, please  submit a vulnerability report  to the Bitski security team.", 
+            "title": "Report Vulnerabilities"
         }, 
         {
             "location": "/overview/", 
