@@ -2,7 +2,7 @@ These examples are a great way to quickly dive in and see how you can integrate 
 
 ## Buying NFTs with credit cards with App Wallet
 
-<video autoplay loop muted playsinline preload style="width: 400px">
+<video autoplay loop muted playsinline preload style="width: 100%; max-width: 800px">
   <source src="../public/stripe-demo.mp4" type="video/mp4">
   <source src="../public/stripe-demo.webm" type="video/webm">
 </video>
