@@ -4,7 +4,7 @@ We provide you with access to the Ethereum network through our hosted nodes, and
 
 ## Shortcuts
 
-- Need an account? <a href="https://bitski.com/signup" target="_blank">Sign up here</a>.
+- Need an account? <a href="https://bitski.com/account/" target="_blank">Sign up here</a>.
 - Learn more how it works in our [overview](overview.md).
 - Ready to start building? Check out [getting started](getting-started.md) and our [quickstart repo](https://github.com/BitskiCo/quickstart).
 - Got questions? Chat with us in our <a href="https://discord.gg/5f6pAFN" target="_blank">Discord</a>.
